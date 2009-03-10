@@ -1,0 +1,5 @@
+/* Reset */
+body, body * { margin: 0; padding: 0; font-weight: normal; }
+
+/* Typography */
+body { line-height: 1.6em; }
