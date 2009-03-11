@@ -1,7 +1,13 @@
 Feature: Publishing an article
    In order to save time creating blog posts and increase 
-   I should be able to 
+   I should be able to quickly create and publish a text file
    
+   Scenario: Author creates a new blank article [DONE]
+      Given that he's working in a text editor and command line
+      When  he wants to create an article
+      When  he runs a generator to create a template article
+      Then  a file with the article name should be created
+      
    Scenario: Author publishes an article
       Given that he's working in a text editor and command line
       And   he's writing in textile
