@@ -9,13 +9,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090311111803) do
+ActiveRecord::Schema.define(:version => 20090311175714) do
 
   create_table "articles", :force => true do |t|
-    t.string   "title"
-    t.text     "content"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string "title"
+    t.text   "content"
   end
 
 end
