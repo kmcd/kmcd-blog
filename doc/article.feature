@@ -9,15 +9,15 @@ Feature: Publishing an article
       Then  a file with the article name should be created
       And   the article title should be at the top of the template
    
+   Scenario: Article url [DONE]
+      Given that the article is published
+      Then  the url should be an underscored slug of the title
+      
    Scenario: Author publishes an article
       Given that he's working in a text editor and command line
       And   he's writing in textile
       When  he's finished writing
       Then  he should publish to the article online with one command
-      
-   Scenario: Article url
-      Given that the article is published
-      Then  the url should be an underscored slug of the title
       
    Scenario: Reader reads article
       Given that he's not logged in

@@ -1,0 +1,5 @@
+<ol id="articles">
+   <% @articles.each do |a| %>
+   <li><%= link_to a.title, article_path(a) %></li>
+   <% end %>
+</ol>

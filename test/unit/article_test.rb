@@ -4,7 +4,7 @@ class ArticleTest < ActiveSupport::TestCase
   TITLE = 'Syntax sugar for test unit'
   
   def setup
-    @test_unit_syntax_sugar = Article.create(:title => TITLE)
+    @test_unit_syntax_sugar = Article.create!(:title => TITLE)
   end
   
   test "should have a title" do

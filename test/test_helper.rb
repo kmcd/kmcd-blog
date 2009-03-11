@@ -27,7 +27,7 @@ class Test::Unit::TestCase
   # test cases which use the @david style and don't mind the speed hit (each
   # instantiated fixtures translates to a database query per test method),
   # then set this back to true.
-  self.use_instantiated_fixtures  = false
+  self.use_instantiated_fixtures  = true
 
   # Setup all fixtures in test/fixtures/*.(yml|csv) for all tests in alphabetical order.
   #
@@ -37,3 +37,10 @@ class Test::Unit::TestCase
 
   # Add more helper methods to be used by all tests here...
 end
+
+module ArticlesFunctionalHelper
+  def show(article)
+    get :show, :id => article.to_param
+  end
+end
+
