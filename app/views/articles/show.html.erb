@@ -1,1 +1,6 @@
-<%= @article.to_html %>
+<h1><%= @article.title %></h1>
+<h2>Written by <%= link_to 'Keith McDonnell', '/' %> on Monday, November 17, 2008</h2>
+
+<div class='content'>
+   <%= @article.to_html %>
+</div>

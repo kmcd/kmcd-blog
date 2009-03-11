@@ -1,5 +1,18 @@
+<img src="images/keith.mcdonnell.jpg"/>
+
+<h1>
+   Hi there! My name is <em>Keith McDonnell</em>. I'm a software pro working for a startup in Berlin. You can contact me at <%= auto_link "keith@dancingtext.com" %> <br/>
+   or + <em>353 87 127 3927</em>.
+</h1>
+
 <ol id="articles">
    <% @articles.each do |a| %>
-   <li><%= link_to a.title, article_path(a) %></li>
+   <%# FIXME: There must be a more elegant way to add the format %>
+   <li>
+      <%= link_to a.title, article_path(a) + ".html" %> 
+      <span>
+         specifies paragraphs with a bold and italic Times or serif font with a size of 12 points and a line height of 14 points.
+      </span>
+   </li>
    <% end %>
 </ol>
