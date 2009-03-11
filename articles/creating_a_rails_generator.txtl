@@ -1,0 +1,9 @@
+Creating a rails generator
+
+* Creating local generators
+* Simple template / file copy with Generator::Base
+* Accept args with Generator::NamedBase
+
+Further reading:
+* "Railscasts":http://railscasts.com/episodes/58-how-to-make-a-generator
+* "Aidan F":http://www.aidanf.net/rails/creating-your-own-generators-in-rails

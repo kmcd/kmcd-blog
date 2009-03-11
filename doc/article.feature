@@ -13,7 +13,7 @@ Feature: Publishing an article
       Given that the article is published
       Then  the url should be an underscored slug of the title
       
-   Scenario: Author publishes an article
+   Scenario: Author publishes an article [DONE]
       Given that he's working in a text editor and command line
       And   he's writing in textile
       When  he's finished writing
