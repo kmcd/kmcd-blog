@@ -1,30 +1,30 @@
-/* Layout */
-body, body * { margin: 0; padding: 0; }
-p.copyright { text-align: center; }
-
-body.index { margin: 4em auto; width: 61.2%; }
-.index img { float: right; margin-left: 1.6em; }
-.index #articles { margin: 4em auto; clear: both; }
-.index #articles li { margin-bottom: 1.6em; }
-
-.show { margin: 4em 6.4em; }
-.show h1, .show h2 { text-align: center; }
-.show .content { margin: 4em auto; }
-.show .content ol, .show .content ul { margin-left: 1em; }
-
 /* Typography */
-body, body * { font: normal normal 14pt/1.6em verdana,sans-serif; }
+
+body, body * { font: normal normal 11pt/1.6em verdana,sans-serif; }
 h1 { font-family: georgia, times, serif; }
 
 #articles { list-style: none; }
-.index #articles span { font-style: italic; }
+.index h1 em { font-size: 1.6em; }
 
-.show h1 { font-size: 2.4em; }
-.show h2, .show h2 a { font-style: italic; }
 
 /* Color */
-p.copyright { color: gray; }
-body.index { color: gray; }
+
+.index h1, h2, p.copyright { color: dimgray; }
 .index h1 em { color: black; }
 
-.show h2 { color: gray; }
+/* Layout */
+
+body, body * { margin: 0; padding: 0; }
+p.copyright { margin-top: 15%; }
+
+.index, .show { margin: 9% auto; width: 61.2%; }
+.index img { float: right; margin: 1em 0 0 1.6em; }
+.index h2 { margin-top: 1.6em; }
+.index ol#articles, .index h1, .index h2 { margin-right: 24%; }
+.index ol#articles { clear: both; margin-top: 15%; }
+.index ol#articles li { margin-bottom: 1.6em; }
+.index #articles li span { padding-left: 1.6em; }
+
+.show h1 { font-size: 1.6em; }
+.show h2 { margin-bottom: 9%; }
+.show ol, .show ul, .show dl { padding: 1em 2.4em; }

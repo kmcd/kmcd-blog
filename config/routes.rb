@@ -3,11 +3,6 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :articles
   map.root :controller => 'articles'
   
-  # The home page (shows all articles): /articles
-  
-  # All comments: /comments
-  # map.resources :comments
-  
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

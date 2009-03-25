@@ -1,5 +1,15 @@
 Creating a rails generator
 
+@
+/* Typography */
+
+body, body * { font: normal normal 11pt/1.6em verdana,sans-serif; }
+h1 { font-family: georgia, times, serif; }
+
+#articles { list-style: none; }
+.index h1 em { font-size: 1.6em; }
+@
+
 * Creating local generators
 * Simple template / file copy with Generator::Base
 * Accept args with Generator::NamedBase
