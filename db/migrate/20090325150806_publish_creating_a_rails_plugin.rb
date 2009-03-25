@@ -6,7 +6,7 @@ class PublishCreatingARailsPlugin < ActiveRecord::Migration
   end
 
   def self.down
-    Article.find_by_title('Creating a rails plugin').destroy
+    Article.find_by_title('Creating a rails plugin').destroy rescue nil
   end
 end
 
