@@ -19,4 +19,3 @@ h1 { font-family: georgia, times, serif; }
 Further reading:
 * "Railscasts":http://railscasts.com/episodes/58-how-to-make-a-generator
 * "Aidan F":http://www.aidanf.net/rails/creating-your-own-generators-in-rails
-* "Foo":http://foo.com
