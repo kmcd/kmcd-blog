@@ -14,7 +14,7 @@
    <li>
       <%= link_to a.title, article_path(a) + ".html" %> 
       <span>
-         specifies paragraphs with a bold and italic Times or serif font with a size of 12 points and a line height of 14 points.
+         <%= a.excerpt -%>
       </span>
    </li>
    <% end %>
