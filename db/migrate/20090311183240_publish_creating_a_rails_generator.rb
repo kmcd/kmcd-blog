@@ -5,11 +5,7 @@ class PublishCreatingARailsGenerator < ActiveRecord::Migration
   end
 
   def self.down
-    begin
-      Article.find_by_title('Creating a rails generator').destroy
-    rescue nil
-      puts "Couldn't find article"
-    end
+    Article.find_by_title('Creating a rails generator').destroy rescue nil
   end
 end
 
