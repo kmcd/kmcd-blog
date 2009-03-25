@@ -1,6 +1,8 @@
 Creating a rails generator
 
-@
+Install rails with the rails command @rails my_project@
+
+<pre>
 /* Typography */
 
 body, body * { font: normal normal 11pt/1.6em verdana,sans-serif; }
@@ -8,7 +10,7 @@ h1 { font-family: georgia, times, serif; }
 
 #articles { list-style: none; }
 .index h1 em { font-size: 1.6em; }
-@
+</pre>
 
 * Creating local generators
 * Simple template / file copy with Generator::Base
@@ -17,3 +19,4 @@ h1 { font-family: georgia, times, serif; }
 Further reading:
 * "Railscasts":http://railscasts.com/episodes/58-how-to-make-a-generator
 * "Aidan F":http://www.aidanf.net/rails/creating-your-own-generators-in-rails
+* "Foo":http://foo.com

@@ -1,23 +1,26 @@
 /* Typography */
 
 body, body * { font: normal normal 11pt/1.6em verdana,sans-serif; }
-.show h1 { font-family: georgia, times, serif; }
 
-#articles { list-style: none; }
+.index #articles { list-style: none; }
 .index h1 em { font-size: 1.6em; }
 
+.show h1 { font-family: georgia, times, serif; }
+pre,code { font-family: courier, monospace; }
 
 /* Color */
 
 .index h1, h2, p.copyright { color: dimgray; }
 .index h1 em { color: black; }
+pre { background-color: lemonchiffon; }
+code { background-color: black; color: palegreen; }
 
 /* Layout */
 
 body, body * { margin: 0; padding: 0; }
-p.copyright { margin-top: 15%; }
+p.copyright { margin-top: 9%; }
 
-.index, .show { margin: 9% auto; width: 61.2%; }
+.index, .show { margin: 5.625% auto; width: 61.2%; }
 .index img { float: right; margin: 1em 0 0 1.6em; }
 .index h2 { margin-top: 1.6em; }
 .index ol#articles, .index h1, .index h2 { margin-right: 24%; }
@@ -27,4 +30,6 @@ p.copyright { margin-top: 15%; }
 
 .show h1 { font-size: 1.6em; }
 .show h2 { margin-bottom: 9%; }
-.show ol, .show ul, .show dl { padding: 1em 2.4em; }
+.show ol, .show ul, .show dl { padding: 0.6em 2.4em; }
+.show pre { padding: 0.6em; margin: 1.6em 0; }
+.show code { padding: 1px 2px; }
