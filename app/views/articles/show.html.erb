@@ -1,6 +1,10 @@
 <h1><%= @article.title %></h1>
-<h2>Written by <%= link_to 'Keith McDonnell', '/' %> on Monday, November 17, 2008</h2>
+<h2>Written by <%= link_to 'Keith McDonnell', '/' %>. Last updated on <%=  @article.updated_on.strftime("%A, %B %d, %Y at %I:%M") %></h2>
 
 <div class='content'>
    <%= @article.to_html %>
 </div>
+
+<p class='comments'>
+   If you&apos;d like to discuss this article, you can send me an email <%= auto_link "keith@dancingtext.com" %> and/or publish an article online and link back to this page.
+</p>

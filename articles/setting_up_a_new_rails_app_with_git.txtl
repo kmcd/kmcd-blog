@@ -1,0 +1,59 @@
+h3. Before we begin ...
+
+For the purposes of this tutorial I'll assume you have a working *UNIX like operating system*, such as Linux or Apple Mac OS X. You can also use cygwin for windows but you _really should_ "get a better computer":http://farm1.static.flickr.com/87/240803829_9212773615_o.png .
+
+Also, a package manager (such as apt or yum) for your operating system will be invaluable if you have to install new software, otherwise you'll have to download, compile & install from source (no thanks).
+
+If you haven't already, you'll need to install the following software (on Ubuntu 8.10):
+# Ruby 1.8 @$ sudo apt-get install -Y ruby1.8-dev ruby1.8 ri1.8 rdoc1.8 irb1.8 libreadline-ruby1.8 libruby1.8@
+# Ruby gems @$ sudo apt-get install -Y rubygems1.8@
+# rails @$ sudo gem install rails sqlite@
+# git @$ sudo apt-get install -Y git-core@
+
+h3. Lets setup a new rails app with git source control
+# Create a brand new rails application
+@$ rails APP_NAME@
+# Change into the root directory of you new rails application
+@$ cd APP_NAME@
+# Ensure git ignores generated files
+@$ touch .gitignore@
+@$ touch log/.gitignore@
+@$ touch tmp/.gitignore@
+# Add these files to .gitignore
+@log/*.log@
+@tmp/**/*@
+@.DS_Store@
+@doc/api@
+@doc/app@
+# (Optionally) freeze your version of rails
+Use @rake rails:freeze:gems@ to use the latest version of rails in your gem repository OR you can use a specific release with @rake rails:freeze:edge RELEASE=1.2.0@
+# First commit
+@$ git add .@
+@$ git commit -m "Starting new app"@
+
+Congratulations! You're now good to go with git & rails.
+
+All your work thusfar has been saved on your computer. So how do you share your work with others? You'll have to create a shared repository. You can store your shared repository on a server and access it via SSH or use a hosted service such as "github":http://github.com or "unfuddle":http://unfuddle.com .
+
+h3. A day in the life of a rails git project
+
+* Setup local git repository (see main section above)
+* Setup remote git repository (see sharing your work section above)
+* edit files, run tests etc.
+* See what you've changed
+@git status@ or @git diff --color @
+* Add files
+@git add .@ to add all files or @git add [FILENAME] [FILENAME] ...@ to add specific files
+* Commit your work
+@git commit -m 'COMMIT MESSAGE' @
+* Share your work (assuming you have a remote repository set up)
+@git push origin master@
+* Fetch lastest changes from remote repository
+@git pull origin master@
+
+h3. Further reading
+
+* "Railcasts git screencast":http://railscasts.com/episodes/96-git-on-rails
+* "GitCasts":http://gitcasts.com
+* "SourceMage git guide":http://wiki.sourcemage.org/Git_Guide
+* "Git users manual":http://www.kernel.org/pub/software/scm/git/docs/user-manual.html
