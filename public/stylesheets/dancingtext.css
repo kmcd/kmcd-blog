@@ -1,9 +1,10 @@
 /* Typography */
 
-body, body * { font: normal normal 11pt/1.6em verdana,sans-serif; }
+body, body * { font: normal normal 10pt/1.6em verdana,sans-serif; }
 
 .index #articles { list-style: none; }
 .index h1 em { font-size: 1.6em; }
+.index h1, .index h2 { text-align: justify; }
 
 .show h1 { font-family: georgia, times, serif; }
 pre,code { font-family: courier, monospace; }
@@ -20,10 +21,11 @@ code { background-color: black; color: palegreen; }
 body, body * { margin: 0; padding: 0; }
 p.copyright { margin-top: 9%; }
 
+.index ol#articles, .index h1, .index h2 { margin-right: 24%; }
+
 .index, .show { margin: 5.625% auto; width: 61.2%; }
 .index img { float: right; margin: 1em 0 0 1.6em; }
 .index h2 { margin-top: 1.6em; }
-.index ol#articles, .index h1, .index h2 { margin-right: 24%; }
 .index ol#articles { clear: both; margin-top: 15%; }
 .index ol#articles li { margin-bottom: 1.6em; }
 .index #articles li span { padding-left: 1.6em; }
