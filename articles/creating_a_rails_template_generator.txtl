@@ -1,0 +1,28 @@
+I use a simple Rails app to publish my articles online. However, each time I
+want to create a new article, I must:
+# Generate a new migration
+# Create a textile file for the article content
+# Make sure the article content file name and migration name match
+
+h3. Eliminating repetitive model/migration creation
+
+The easiest way is to create the required files first by hand, then copy them
+over to the generator layout files.
+
+* For your current app only: lib/generators
+
+* Accept args with Generator::NamedBase
+
+* Create a migration
+
+* May be used to create repetive controllers e.g. all REST actions
+
+Testing (see rails guide)
+* File generation
+
+h3. Further reading
+
+* "Rails API":http://api.rubyonrails.org/classes/Rails/Generator/Base.html
+* "Creating generator Rails guide":http://guides.rubyonrails.org/plugins.html#generators
+* "Railscasts":http://railscasts.com/episodes/58-how-to-make-a-generator
+* "Aidan Finn's excellent tutorial":http://www.aidanf.net/rails/creating-your-own-generators-in-rails

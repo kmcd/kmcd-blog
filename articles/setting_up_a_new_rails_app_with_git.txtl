@@ -11,25 +11,23 @@ If you haven't already, you'll need to install the following software (on Ubuntu
 # git @$ sudo apt-get install -Y git-core@
 
 h3. Lets setup a new rails app with git source control
-# Create a brand new rails application
-@$ rails APP_NAME@
-# Change into the root directory of you new rails application
-@$ cd APP_NAME@
+
+# Create a brand new rails application @$ rails APP_NAME@
+# Then Change into the root directory @$ cd APP_NAME@
 # Ensure git ignores generated files
-@$ touch .gitignore@
-@$ touch log/.gitignore@
-@$ touch tmp/.gitignore@
+<pre>$ touch .gitignore
+$ touch log/.gitignore
+$ touch tmp/.gitignore</pre>
 # Add these files to .gitignore
-@log/*.log@
-@tmp/**/*@
-@.DS_Store@
-@doc/api@
-@doc/app@
+<pre>log/*.log
+tmp/**/*
+.DS_Store
+doc/api
+doc/app</pre>
+<script src="http://gist.github.com/87832.js"></script>
 # (Optionally) freeze your version of rails
 Use @rake rails:freeze:gems@ to use the latest version of rails in your gem repository OR you can use a specific release with @rake rails:freeze:edge RELEASE=1.2.0@
-# First commit
-@$ git add .@
-@$ git commit -m "Starting new app"@
+# Add all files @$ git add .@, and then commit @$ git commit -m "Starting new app"@
 
 Congratulations! You're now good to go with git & rails.
 

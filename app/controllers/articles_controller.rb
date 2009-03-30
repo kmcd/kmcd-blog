@@ -6,6 +6,6 @@ class ArticlesController < ApplicationController
   end
   
   def index
-    @articles = Article.find(:all, :order => 'updated_on')
+    @articles = Article.find(:all, :order => 'updated_on DESC')
   end
 end

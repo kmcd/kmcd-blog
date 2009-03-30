@@ -1,30 +1,87 @@
-Assumptions
+In this article, I'll show you, in two simple examples, how *custom generators* 
+can speed up your Rails workflow. Firstly, create a new rails app in the style
+of "Railscasts":http://railscasts.com and secondly, automate creating a new blog post.
 
-Rationale
-Why use rails generators ? 
-- Automated repetive actions with dode generation
-- eg Setup a default app
+If you've coded even the most basic Rail app you'll be familiar with generators.
+We let @./script/generate@ & friends automate mundane & error prone tasks and
+leave us to get on with the fun stuff. If you're _not_ familiar with generators
+just read the "Rails command line guide":http://guides.rubyonrails.org/command_line.html and
+expiriment with @./script/generate@ from the root of a Rails app directory.
 
-Setup
-Create a new rails app
-Where to store generators?
+h3. Create a new app with a RailCasts style UI
 
-Creating local generators
-[Steps]
+Here's a quick way to create a new rails app with
+"Railscasts":http://railscasts.com style presentation. The idea being that when
+you want to watch a new episode you can:
+# create a new rails app @rails metal@
+# generate a RailsCasts style UI @cd rails_metal && ./script/generate
+railscasts_ui@
+# start the server @./script/server@ and follow along
 
-Simple template / file copy with Generator::Base
-[Steps]
+Seeing as you'll probablby use this on multiple, seperate Rails apps, the
+generator should be saved in @~/.rails/generators/railscasts_ui@ .
 
-Accept args with Generator::NamedBase
-[Steps]
+# Create the generator directory 
+  @mkdir -p /.rails/generators/railscasts_ui/templates@
+  
+# Change to the generator directory
+  @cd /.rails/generators/railscasts_ui@
+  
+# Create a documentation file
+  @touch USAGE@
+  
+# Create the stylesheet
+  @touch templates/railscasts.css@
+  
+# Create the layout file
+  @touch templates/application.rhtml@
+  
+# Create the generator file @edit templates/railscasts_ui.rb@ . Note that the class name must be a camel case version of the generator directory (RailscastsUi).
+  <pre>
+    class RailscastsUi < Rails::Generator::NamedBase
+      def manifest
+        record do |m|
+          m.directory "#{RAILS_ROOT}/public/stylesheets"
+          m.file "railscasts.css",    "#{RAILS_ROOT}/public/stylesheets/railscasts.css"
+          
+          m.directory "#{RAILS_ROOT}/app/views/layouts"
+          m.file "application.rhtml", "#{RAILS_ROOT}/app/views/layouts/application.rhtml"
+        end
+      end
+    end
+  </pre>
 
-Create a migration
-[Steps]
+You can use this technique to automate any static file creation or copying, e.g.
+if you want to have different stylesheets for development and production. 
+
+Read on for more information on creating dynamic templates and passing arguments to generators ...
+
+
+h3. Repetitive model/migration creation
+
+I use a simple Rails app to publish my articles online. However, each time I
+want to create a new article, I must:
+# Generate a new migration
+# Create a textile file for the article content
+# Make sure the article content file name and migration name match
+
+The easiest way is to create the required files first by hand, then copy them
+over to the generator layout files.
+
+* For your current app only: lib/generators
+
+* Accept args with Generator::NamedBase
+
+* Create a migration
+
+* May be used to create repetive controllers e.g. all REST actions
 
 Testing (see rails guide)
+* File generation
 
 h3. Further reading
 
+* "Rails API":http://api.rubyonrails.org/classes/Rails/Generator/Base.html
 * "Creating generator Rails guide":http://guides.rubyonrails.org/plugins.html#generators
 * "Railscasts":http://railscasts.com/episodes/58-how-to-make-a-generator
-* "Aidan F's excellent tutorial":http://www.aidanf.net/rails/creating-your-own-generators-in-rails
+* "Aidan Finn's excellent tutorial":http://www.aidanf.net/rails/creating-your-own-generators-in-rails

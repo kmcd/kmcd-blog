@@ -1,37 +1,41 @@
 /* Typography */
 
 body, body * { font: normal normal 11pt/1.6em verdana,sans-serif; }
-pre,code { font-family: courier, monospace; }
-.index #articles { list-style: none; }
-.index h1 em { font-size: 1.6em; }
+pre,code { font-family: 'bitstream vera sans mono', courier, monospace; line-height: 0.6em; }
+code { font-weight:bold; }
+.index h1 em, .show h1, .show h3 { font-family: georgia, times, serif; }
+
+h1 em, .show h1 { font-size: 2.4em; }
+.show h3 { font-size: 1.6em; }
+
 .index h1, .index h2 { text-align: justify; }
-.show h1 { font-size: 1.6em; }
-.show h3 { font-size: 1.36em; }
+.index #articles { list-style: none; }
 .show h2, .show h2 * { font-style: italic; }
-.show h1, .show h3 { font-family: georgia, times, serif; }
 .show .content em, .show p.comments, .show p.comments * { font-style: italic; }
 
 /* Color */
 
-pre { background-color: lemonchiffon; }
-code { background-color: black; color: limegreen; }
-.index h1, h2, p.copyright { color: dimgray; }
-.index h1 em { color: black; }
-.show h3 { color: silver; }
+h1, h2, h3, p.copyright { color: gray; }
+.index h1 em, .show h1 { color: black; }
+.index h2.contact { background-color: rgb(255,255,120); color: black; }
 
 /* Layout */
 
 body, body * { margin: 0; padding: 0; }
 p.copyright { margin-top: 4em; }
+
 .index ol#articles, .index h1, .index h2 { margin-right: 24%; }
 .index, .show { margin: 5.625% auto; width: 61.2%; }
+
 .index img { float: right; margin: 1em 0 0 1.6em; }
 .index h2 { margin-top: 1.6em; }
-.index ol#articles { clear: both; margin-top: 15%; }
+.index h2.contact { padding: 0 5px; }
+.index ol#articles { clear: both; margin-top: 4em; }
 .index ol#articles li { margin-bottom: 1.6em; }
 .index #articles li span { padding-left: 1.6em; }
+
 .show h2 { margin-bottom: 2.4em; }
-.show h3 { margin-top: 2.4em; }
+.show h3 { margin-top: 0.6em; }
 .show ol, .show ul, .show dl { padding: 0.6em 2.4em; }
 .show ol li { margin-bottom: 1em; }
 .show pre { padding: 0.6em;  margin: 0; }
