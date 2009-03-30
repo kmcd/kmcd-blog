@@ -35,11 +35,11 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: dancingtext_test
+  database: blog_test
   pool: 5
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: dancingtext_production
+  database: blog_production
   pool: 5
