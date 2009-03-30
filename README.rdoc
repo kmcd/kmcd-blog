@@ -1,0 +1,5 @@
+== Welcome to Keith McDonnell's blog
+
+Here's the lightweight rails app I use to publish my articles online at heroku.com. 
+
+I'll put up an overview of the models, views and controllers here in time.

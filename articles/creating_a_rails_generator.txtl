@@ -1,21 +1,30 @@
-Creating a rails generator
+Assumptions
 
-Install rails with the rails command @rails my_project@
+Rationale
+Why use rails generators ? 
+- Automated repetive actions with dode generation
+- eg Setup a default app
 
-<pre>
-/* Typography */
+Setup
+Create a new rails app
+Where to store generators?
 
-body, body * { font: normal normal 11pt/1.6em verdana,sans-serif; }
-h1 { font-family: georgia, times, serif; }
+Creating local generators
+[Steps]
 
-#articles { list-style: none; }
-.index h1 em { font-size: 1.6em; }
-</pre>
+Simple template / file copy with Generator::Base
+[Steps]
 
-* Creating local generators
-* Simple template / file copy with Generator::Base
-* Accept args with Generator::NamedBase
+Accept args with Generator::NamedBase
+[Steps]
 
-Further reading:
+Create a migration
+[Steps]
+
+Testing (see rails guide)
+
+h3. Further reading
+
+* "Creating generator Rails guide":http://guides.rubyonrails.org/plugins.html#generators
 * "Railscasts":http://railscasts.com/episodes/58-how-to-make-a-generator
-* "Aidan F":http://www.aidanf.net/rails/creating-your-own-generators-in-rails
+* "Aidan F's excellent tutorial":http://www.aidanf.net/rails/creating-your-own-generators-in-rails

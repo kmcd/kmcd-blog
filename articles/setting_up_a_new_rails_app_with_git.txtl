@@ -39,17 +39,12 @@ h3. A day in the life of a rails git project
 
 * Setup local git repository (see main section above)
 * Setup remote git repository (see sharing your work section above)
-* edit files, run tests etc.
-* See what you've changed
-@git status@ or @git diff --color @
-* Add files
-@git add .@ to add all files or @git add [FILENAME] [FILENAME] ...@ to add specific files
-* Commit your work
-@git commit -m 'COMMIT MESSAGE' @
-* Share your work (assuming you have a remote repository set up)
-@git push origin master@
-* Fetch lastest changes from remote repository
-@git pull origin master@
+* Edit files, run tests etc.
+* Use @git status@ or @git diff --color@ to see what you've changed
+* Add all files with @git add .@ or add specific files using @git add [FILENAME] [FILENAME] ...@.
+* Commit your work: @git commit -m 'COMMIT MESSAGE'@
+* Share your work (assuming you have a remote repository set up) @git push origin master@
+* Fetch lastest changes from remote repository @git pull origin master@
 
 h3. Further reading
 

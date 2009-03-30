@@ -1,1 +1,21 @@
-Some *examples* of "Textile":http://redcloth.org to get you going
+Assumptions
+
+Rationale
+Why use rails generators ? 
+- Automated repetive actions with dode generation
+- eg Setup a default app
+
+Setup
+Create a new rails app
+Where to store generators?
+
+Creating a basic plugin
+[Steps]
+
+Testing
+
+h3. Further reading
+
+* "Creating generator Rails guide":http://guides.rubyonrails.org/plugins.html#generators
+* "Railscasts":http://railscasts.com/episodes/58-how-to-make-a-generator
+* "Aidan F's excellent tutorial":http://www.aidanf.net/rails/creating-your-own-generators-in-rails
