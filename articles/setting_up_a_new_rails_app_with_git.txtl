@@ -1,5 +1,3 @@
-h3. Before we begin ...
-
 For the purposes of this tutorial I'll assume you have a working *UNIX like operating system*, such as Linux or Apple Mac OS X. You can also use cygwin for windows but you _really should_ "get a better computer":http://farm1.static.flickr.com/87/240803829_9212773615_o.png .
 
 Also, a package manager (such as apt or yum) for your operating system will be invaluable if you have to install new software, otherwise you'll have to download, compile & install from source (no thanks).
@@ -24,7 +22,6 @@ tmp/**/*
 .DS_Store
 doc/api
 doc/app</pre>
-<script src="http://gist.github.com/87832.js"></script>
 # (Optionally) freeze your version of rails
 Use @rake rails:freeze:gems@ to use the latest version of rails in your gem repository OR you can use a specific release with @rake rails:freeze:edge RELEASE=1.2.0@
 # Add all files @$ git add .@, and then commit @$ git commit -m "Starting new app"@
@@ -44,7 +41,7 @@ h3. A day in the life of a rails git project
 * Share your work (assuming you have a remote repository set up) @git push origin master@
 * Fetch lastest changes from remote repository @git pull origin master@
 
-h3. Further reading
+h3. References
 
 * "Railcasts git screencast":http://railscasts.com/episodes/96-git-on-rails
 * "GitCasts":http://gitcasts.com

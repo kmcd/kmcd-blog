@@ -10,17 +10,13 @@ The easiest way is to create the required files first by hand, then copy them
 over to the generator layout files.
 
 * For your current app only: lib/generators
-
 * Accept args with Generator::NamedBase
-
 * Create a migration
-
 * May be used to create repetive controllers e.g. all REST actions
-
-Testing (see rails guide)
+* Testing (see rails guide)
 * File generation
 
-h3. Further reading
+h3. References
 
 * "Rails API":http://api.rubyonrails.org/classes/Rails/Generator/Base.html
 * "Creating generator Rails guide":http://guides.rubyonrails.org/plugins.html#generators
