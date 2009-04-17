@@ -1,6 +1,4 @@
-In this article, I'll show you, in two simple examples, how *custom generators* 
-can speed up your Rails workflow. Firstly, create a new rails app in the style
-of "Railscasts":http://railscasts.com and secondly, automate creating a new blog post.
+In this article, I'll show you how a *custom generator* can speed up your Rails workflow by copying some boilerplate code. For example, instead of copying and pasting CSS and HTML layout you can create a generator to do this for you.
 
 If you've coded even the most basic Rail app you'll be familiar with generators. We let @./script/generate@ & friends automate mundane & error prone tasks and leave us to get on with the fun stuff. If you're _not_ familiar with generators just read the "Rails command line guide":http://guides.rubyonrails.org/command_line.html and expiriment with @./script/generate@ from the root of a Rails app directory.
 
