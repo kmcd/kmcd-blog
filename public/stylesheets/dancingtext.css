@@ -2,8 +2,7 @@
 
 body, body * { font: normal normal 11pt/1.6em verdana,sans-serif; }
 pre,code { font-family: 'andale sans mono', monospace; }
-pre { line-height: 1em; }
-code { line-height: 1.6em; }
+pre { line-height: 1.1em; }
 .index h1 em, .show h1, .show h3 { font-family: georgia, times, serif; }
 
 h1 em, .show h1 { font-size: 2.4em; line-height: 1em; }

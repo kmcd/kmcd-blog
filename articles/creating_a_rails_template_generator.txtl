@@ -16,6 +16,7 @@ h3. Create the generator directory structure
 If you'll only use the generator in one Rails app, create your custom generator in  @lib/generators@. If you'll only use the generator in many Rails apps, create your custom generator @~/.rails/generators@
 
 Here's what your directory tree should look like:
+
 <pre>
 |-- USAGE                    (help file)
 |-- article_generator.rb     (this file drives ./script/generate article)
