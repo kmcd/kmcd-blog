@@ -5,8 +5,8 @@ pre,code { font-family: 'bitstream vera sans mono', courier, monospace; line-hei
 code { font-weight:bold; }
 .index h1 em, .show h1, .show h3 { font-family: georgia, times, serif; }
 
-h1 em, .show h1 { font-size: 2.4em; }
-.show h3 { font-size: 1.6em; }
+h1 em, .show h1 { font-size: 2.4em; line-height: 1em; }
+.show h3 { font-size: 1.6em; line-height: 1em; }
 
 .index h1, .index h2 { text-align: justify; }
 .index #articles { list-style: none; }
