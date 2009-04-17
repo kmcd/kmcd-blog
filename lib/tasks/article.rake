@@ -13,7 +13,8 @@ namespace :article do
     else
       title = ENV['title']
       `touch #{markdown_file(title)}` 
-      Article.create :title => title, :content => content_for(title)
+      Article.create :title => title, :content => content_for(title), 
+        :excerpt => ENV['excerpt']
     end
   end
 end
