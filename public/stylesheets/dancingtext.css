@@ -1,7 +1,7 @@
 /* Typography */
 
 body, body * { font: normal normal 11pt/1.6em verdana,sans-serif; }
-pre,code { font-family: 'bitstream vera sans mono', courier, monospace; line-height: 0.6em; }
+pre,code { font-family: 'andale sans mono', monospace; line-height: 1.6em; }
 code { font-weight:bold; }
 .index h1 em, .show h1, .show h3 { font-family: georgia, times, serif; }
 
@@ -18,6 +18,7 @@ h1 em, .show h1 { font-size: 2.4em; line-height: 1em; }
 h1, h2, h3, p.copyright { color: gray; }
 .index h1 em, .show h1 { color: black; }
 .index h2.contact { background-color: rgb(255,255,120); color: black; }
+pre,code { color: green; }
 
 /* Layout */
 
