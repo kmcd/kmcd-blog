@@ -1,5 +1,5 @@
 <h1><%= @article.title %></h1>
-<h2>Written by <%= link_to 'Keith McDonnell', '/' %>. Last updated on <%=  @article.updated_on.strftime("%A, %B %d, %Y at %I:%M") %></h2>
+<h2>Written by <%= link_to 'Keith McDonnell', '/' %>. Last updated on <%=  @article.updated_on.strftime("%A, %B %d, %Y") %>.</h2>
 
 <div class='content'>
    <%= @article.to_html %>

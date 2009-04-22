@@ -1,0 +1,54 @@
+Simply put, euclidean distance is the shortest distance between two points. The kind of distance you would measure with a ruler. 
+
+This is calculated using the following formula: 
+
+!http://upload.wikimedia.org/math/f/b/c/fbc0464f8ae162c13ba574b4010cd4da.png!
+
+For example, the distance between points P (1,2) and Q (3,4) is:
+
+| &radic; (P ~1~ - Q ~1~ ) ^2^ + (P ~2~ - Q ~2~ ) ^2^ |
+| &radic; (1-3) ^2^ + (2-4) ^2^ |
+| &radic; (-2) ^2^ + (-2) ^2^ |
+| &radic; 4 + 4 &asymp; 2.828427125 |
+
+To calculate the distance in multiple dimensions, simply sum the square of each extra point. For example, The distance between points P (1,2,3) and Q (4,5,6) is:
+
+| &radic; (P ~1~ - Q ~1~ ) ^2^ + (P ~2~ - Q ~2~ ) ^2^ + (P ~3~ - Q ~3~ ) ^2^ |
+| &radic; (1-3) ^2^ + (2-4) ^2^ |
+| &radic; (-2) ^2^ + (-2) ^2^ |
+| &radic; 4 + 4 &asymp; 2.828427125 |
+
+h3. Ruby implementation
+
+<pre># Takes 2 x,y points as as 2 arrays, eg sim_euclidean([3,6],[4,1])
+def self.sim_euclidean(p1,p2)
+  1 / (1 + Math.sqrt( ((p1.first - p2.first) ** 2) + ((p2.last - p2.last) ** 2) ) )
+end</pre>
+
+<pre>def test_score_similarity_with_euclidean_distance
+  assert_in_delta 0.1481, euclidean_distance([1,2], [3,4]),0.0001
+end</pre>
+
+h3. Measuring similarity
+
+[items,critics]
+
+|_. Critic  |_. Movie |_. Rating (1-5) |
+| Ringo   | Pulp Fiction | 5 |
+| Paul    | Pulp Fiction | 4 |
+| Ringo   | Blade Runner | 2 |
+| Paul    | Blade Runner | 5 |
+
+[graph of two ratings]
+
+h3. References
+* "Wikipedia:Euclidean distance":http://en.wikipedia.org/wiki/Euclidean_distance
+* "Programming Collective Intelligence":http://www.amazon.com/Programming-Collective-Intelligence-Building-Applications/dp/0596529325/ref=sr_1_2?ie=UTF8&s=books&qid=1240322333&sr=8-2 by Toby Segaran
+
+h3. Futher reading
+
+You can also use Euclidean distance to:
+* "calculate the similarity between two documents":http://www.phpandme.net/2009/03/calculating-distance-between-two-documents
+* or calculate the proximity of two locations
+
+I'm working through the examples in the Collective Intelligence book by Segaran. You can find them at my "Collective Intelligence github repository":http://github.com/kmcd/ci

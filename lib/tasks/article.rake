@@ -11,8 +11,9 @@ namespace :article do
     if ENV['title'].blank?
       puts error_message
     else
-      title = ENV['title']
-      `touch #{markdown_file(title)}` 
+      title         = ENV['title']
+      article_file  = markdown_file(title)
+      `touch #{article_file} && echo "h1. #{ENV['title']}" > #{article_file}` 
       Article.create :title => title, :content => content_for(title), 
         :excerpt => ENV['excerpt']
     end

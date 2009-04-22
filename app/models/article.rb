@@ -7,6 +7,22 @@ class Article < ActiveRecord::Base
   end
   
   def to_html
-    RedCloth.new(content).to_html
+    # TODO: cache content in column & update on edit
+    RedCloth.new(
+      RAILS_ENV == 'development' ? content_for(title) : content
+    ).to_html
+  end
+  
+  # TODO: dry up with lib/tasks/article.rake
+  def content_for(title)
+    File.open(markdown_file(title)).read
+  end
+  
+  def markdown_file(title)
+    RAILS_ROOT + "/articles/#{escaped_name(title)}.txtl"
+  end
+  
+  def escaped_name(title)
+    title.downcase.gsub(/\W/,'_')
   end
 end
