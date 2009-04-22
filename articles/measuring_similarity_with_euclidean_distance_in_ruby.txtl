@@ -1,4 +1,4 @@
-Simply put, euclidean distance is the shortest distance between two points. The kind of distance you would measure with a ruler. 
+Simply put, Euclidean distance is the shortest distance between two points. The kind of distance you would measure with a ruler. 
 
 This is calculated using the following formula: 
 
@@ -9,25 +9,25 @@ For example, the distance between points P (1,2) and Q (3,4) is:
 | &radic; (P ~1~ - Q ~1~ ) ^2^ + (P ~2~ - Q ~2~ ) ^2^ |
 | &radic; (1-3) ^2^ + (2-4) ^2^ |
 | &radic; (-2) ^2^ + (-2) ^2^ |
-| &radic; 4 + 4 &asymp; 2.828427125 |
+| &radic; 4 + 4 &asymp; 2.828 |
 
 To calculate the distance in multiple dimensions, simply sum the square of each extra point. For example, The distance between points P (1,2,3) and Q (4,5,6) is:
 
 | &radic; (P ~1~ - Q ~1~ ) ^2^ + (P ~2~ - Q ~2~ ) ^2^ + (P ~3~ - Q ~3~ ) ^2^ |
-| &radic; (1-3) ^2^ + (2-4) ^2^ |
-| &radic; (-2) ^2^ + (-2) ^2^ |
-| &radic; 4 + 4 &asymp; 2.828427125 |
+| &radic; (1-4) ^2^ + (2-5) ^2^ + (3-6) ^2^ |
+| &radic; (-3) ^2^ + (-3) ^2^ (-2) ^2^ + (-3) ^2^ |
+| &radic; 9 + 9 + 9 |
+| &radic; 27 &asymp;  5.196 |
 
 h3. Ruby implementation
 
-<pre># Takes 2 x,y points as as 2 arrays, eg sim_euclidean([3,6],[4,1])
-def self.sim_euclidean(p1,p2)
-  1 / (1 + Math.sqrt( ((p1.first - p2.first) ** 2) + ((p2.last - p2.last) ** 2) ) )
-end</pre>
+To recap, we want to implement the following formula for Euclidean distance in Ruby.
 
-<pre>def test_score_similarity_with_euclidean_distance
-  assert_in_delta 0.1481, euclidean_distance([1,2], [3,4]),0.0001
-end</pre>
+!http://upload.wikimedia.org/math/f/b/c/fbc0464f8ae162c13ba574b4010cd4da.png!
+
+The main point to note is that the function should take two arrays, each with an arbitrary length. Each element of the array represents a point in a multidimensional space.
+
+<script src="http://gist.github.com/99722.js"></script>
 
 h3. Measuring similarity
 

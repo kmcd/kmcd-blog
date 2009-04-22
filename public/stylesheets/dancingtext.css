@@ -30,6 +30,6 @@ body { color:  rgb(50,50,50) ;}
 .index ol#articles li { margin-bottom: 1.6em; }
 .index #articles li span { padding-left: 1.6em; }
 
-.show p.comments { margin: 4em 0; }
 .show .content p { margin-bottom: 1.6em; }
 .show h3 { margin-top: 2.4em; }
+p.copyright, p.comments { margin-top: 4em; }
