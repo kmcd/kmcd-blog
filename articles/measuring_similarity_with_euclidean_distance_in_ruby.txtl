@@ -7,17 +7,17 @@ This is calculated using the following formula:
 For example, the distance between points P (1,2) and Q (3,4) is:
 
 | &radic; (P ~1~ - Q ~1~ ) ^2^ + (P ~2~ - Q ~2~ ) ^2^ |
-| &radic; (1-3) ^2^ + (2-4) ^2^ |
-| &radic; (-2) ^2^ + (-2) ^2^ |
-| &radic; 4 + 4 &asymp; 2.828 |
+| = &radic; (1-3) ^2^ + (2-4) ^2^ |
+| = &radic; (-2) ^2^ + (-2) ^2^ |
+| = &radic; 4 + 4 &asymp; 2.828 |
 
 To calculate the distance in multiple dimensions, simply sum the square of each extra point. For example, The distance between points P (1,2,3) and Q (4,5,6) is:
 
 | &radic; (P ~1~ - Q ~1~ ) ^2^ + (P ~2~ - Q ~2~ ) ^2^ + (P ~3~ - Q ~3~ ) ^2^ |
-| &radic; (1-4) ^2^ + (2-5) ^2^ + (3-6) ^2^ |
-| &radic; (-3) ^2^ + (-3) ^2^ (-2) ^2^ + (-3) ^2^ |
-| &radic; 9 + 9 + 9 |
-| &radic; 27 &asymp;  5.196 |
+| = &radic; (1-4) ^2^ + (2-5) ^2^ + (3-6) ^2^ |
+| = &radic; (-3) ^2^ + (-3) ^2^ (-2) ^2^ + (-3) ^2^ |
+| = &radic; 9 + 9 + 9 |
+| = &radic; 27 &asymp;  5.196 |
 
 h3. Ruby implementation
 
@@ -25,21 +25,45 @@ To recap, we want to implement the following formula for Euclidean distance in R
 
 !http://upload.wikimedia.org/math/f/b/c/fbc0464f8ae162c13ba574b4010cd4da.png!
 
-The main point to note is that the function should take two arrays, each with an arbitrary length. Each element of the array represents a point in a multidimensional space.
+The main point to note is that the function should take two arrays, each with an arbitrary length. Each element of the array represents a point in a multidimensional space. For the sake of clarity, this example excludes error handling (e.g. arrays of differing lengths ).
 
 <script src="http://gist.github.com/99722.js"></script>
 
 h3. Measuring similarity
 
-[items,critics]
+We can use  Euclidean distance to measure the similarity between critics and rated films, given a list of critics, films and a critics rating for each film. To find the similarity between two films:
+# Express each films rating as a point in multidimensional space
+# Calculate the Euclidean distance between those two points
 
-|_. Critic  |_. Movie |_. Rating (1-5) |
+Using the following table to compare critics and films:
+
+|_. Critic  |_. Film |_. Rating (1-5) |
 | Ringo   | Pulp Fiction | 5 |
-| Paul    | Pulp Fiction | 4 |
 | Ringo   | Blade Runner | 2 |
+| Ringo   | Casablanca   | 3 |
+| Paul    | Pulp Fiction | 4 |
 | Paul    | Blade Runner | 5 |
+| Paul    | Casablanca   | 3 |
+| John    | Metropolis   | 3 |
+| John    | Casablanca   | 3 |
+| George  | Pulp Fiction | 2 |
+| George  | Casablanca   | 5 |
 
-[graph of two ratings]
+To compare two films, use each critics rating as a point in multidimensional space; e.g. Pulp Fiction P(5,4,2) and Casablanca Q(3,3,5) :
+
+| &radic; (P ~1~ - Q ~1~ ) ^2^ + (P ~2~ - Q ~2~ ) ^2^ + (P ~3~ - Q ~3~ ) ^2^ |
+| = &radic; (5-3) ^2^ + (4-3) ^2^ + (2-5) ^2^ |
+| = &radic; (2) ^2^ + (1) ^2^ + (-3) ^2^ |
+| = &radic; 4 + 1 + 9  &asymp; 3.742 |
+
+To compare two critics, only use the films they have both rated. In the case of Ringo and Geogre that's Pulp Fiction & Casablanca, giving Ringo P(5,3) and George Q(2,5) :
+
+| &radic; (P ~1~ - Q ~1~ ) ^2^ + (P ~2~ - Q ~2~ ) ^2^ |
+| = &radic; (5-2) ^2^ + (3-5) ^2^ |
+| = &radic; (3) ^2^ + (-2) ^2^ |
+| = &radic; 9 + 4 &asymp; 3.605 |
+
+Therefore, the closer together two films, the more similar they are. Conversely, the further apart, the less similar they are.
 
 h3. References
 * "Wikipedia:Euclidean distance":http://en.wikipedia.org/wiki/Euclidean_distance

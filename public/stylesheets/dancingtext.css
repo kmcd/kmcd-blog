@@ -16,8 +16,12 @@ h1 em, .show h1 { font-size: 1.6em; line-height: 1em; }
 body { color:  rgb(50,50,50) ;}
 .index h1 em, .show h1, .show h3, pre, code { color: black; }
 .index h2.contact { background-color: rgb(255,255,120); color: black; }
+table td { border: thin solid silver; }
 
 /* Layout */
+table { border-collapse: collapse; }
+table td { border: thin solid silver; padding-right: 4em; }
+table th { text-align: left; }
 
 .index ol#articles, .index h1, .index h2 { margin-right: 24%; }
 .index, .show { margin: 5.625% auto; width: 61.2%; }
