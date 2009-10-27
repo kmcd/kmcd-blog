@@ -11,11 +11,14 @@ namespace :article do
   
   desc "Create a new blank article"
   task :new => :environment do
-    puts(ERROR_MSG) && return if ENV['title'].blank?
-    
-    title, article_file = ENV['title'], markdown_file(title)
-    `touch #{article_file} && echo "h1. #{ENV['title']}" > #{article_file}` 
-    Article.create :title => title, :content => content_for(title), :excerpt => ENV['excerpt']
+    if ENV['title'].blank?
+      puts(ERROR_MSG) 
+    else
+      title = ENV['title']
+      article_file = markdown_file(title)
+      `touch #{article_file} && echo "# #{ENV['title']}" > #{article_file}`
+      Article.create :title => title.humanize, :content => content_for(title), :excerpt => ENV['excerpt']
+    end
   end
 end
 
@@ -28,7 +31,7 @@ def content_for(title)
 end
 
 def markdown_file(title)
-  RAILS_ROOT + "/articles/#{escaped_name(title)}.txtl"
+  "#{RAILS_ROOT}/articles/#{escaped_name(title)}.txtl"
 end
 
 def escaped_name(title)
