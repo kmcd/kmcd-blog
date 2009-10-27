@@ -1,23 +1,26 @@
+ERROR_MSG = "You must specify an article title. Usage: $ rake article:new title='Ariticle title'"
+
 namespace :article do
   desc "Re-generate all articles from textile source"
   task :update => :environment do
-    Article.all.each do |article|
-      article.update_attribute :content, content_for(article.title)
+    Article.destroy_all
+    Dir["#{RAILS_ROOT}/articles/*.*"].each do |article|
+    Article.create! :content => File.open(article).read, :title => title_for(article)
     end
   end
   
   desc "Create a new blank article"
   task :new => :environment do
-    if ENV['title'].blank?
-      puts error_message
-    else
-      title         = ENV['title']
-      article_file  = markdown_file(title)
-      `touch #{article_file} && echo "h1. #{ENV['title']}" > #{article_file}` 
-      Article.create :title => title, :content => content_for(title), 
-        :excerpt => ENV['excerpt']
-    end
+    puts(ERROR_MSG) && return if ENV['title'].blank?
+    
+    title, article_file = ENV['title'], markdown_file(title)
+    `touch #{article_file} && echo "h1. #{ENV['title']}" > #{article_file}` 
+    Article.create :title => title, :content => content_for(title), :excerpt => ENV['excerpt']
   end
+end
+
+def title_for(article)
+  article.gsub(/(.*articles\/|\.\w+$)/, '').humanize
 end
 
 def content_for(title)
@@ -30,8 +33,4 @@ end
 
 def escaped_name(title)
   title.downcase.gsub(/\W/,'_')
-end
-
-def error_message
-  "You must specify an article title. Usage: $ rake artcile:new title='Ariticle title'"
 end

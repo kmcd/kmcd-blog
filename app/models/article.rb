@@ -1,3 +1,5 @@
+require 'rdiscount'
+
 class Article < ActiveRecord::Base
   validates_presence_of :title
   validates_uniqueness_of :title
@@ -8,14 +10,16 @@ class Article < ActiveRecord::Base
   
   def to_html
     # TODO: cache content in column & update on edit
-    RedCloth.new(
-      RAILS_ENV == 'development' ? content_for(title) : content
-    ).to_html
+    RDiscount.new( content_for(title) ).to_html
   end
   
   # TODO: dry up with lib/tasks/article.rake
   def content_for(title)
-    File.open(markdown_file(title)).read
+    if RAILS_ENV == 'development' 
+      File.open(markdown_file(title)).read 
+    else
+      content
+    end
   end
   
   def markdown_file(title)

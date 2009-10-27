@@ -13,13 +13,9 @@
 </h2>
 
 <ol id="articles">
-   <% @articles.each do |a| %>
-   <%# FIXME: There must be a more elegant way to add the format %>
+   <% @articles.each do |article| %>
    <li>
-      <%= link_to a.title, article_path(a) + ".html" %> 
-      <span>
-         <%= a.excerpt -%>
-      </span>
+      <%= link_to article.title, article_path(article) + ".html" %>
    </li>
    <% end %>
 </ol>
