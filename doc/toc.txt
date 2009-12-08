@@ -1,0 +1,27 @@
+= Rails
+Creating a rails template generator
+Creating a rails generator
+Setting up a rails app with git
+Full screen google map with rails (geokit)
+Finding people in your area (geokit)
+
+= Ruby
+[Teach me to code qs]
+Introduction
+Blocks
+Metaprogramming
+Ruby Best Practices
+Flight search engine
+Car rental schema ( Sequel, sinatra, haml )
+
+= Project managment
+Scrum @ Plazes
+Scrum @ WLD
+Kanban @ WLD
+Customer development with CareerMee
+Contracting
+
+= Algorithms
+Measuring similarity with Euclidean distance
+[CitrusByte qs]
+Collective Intel ch. 2
