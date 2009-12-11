@@ -13,6 +13,7 @@ Metaprogramming
 Ruby Best Practices
 Flight search engine
 Car rental schema ( Sequel, sinatra, haml )
+Testing system shell commands using mocks & stubs
 
 = Project managment
 Scrum @ Plazes
