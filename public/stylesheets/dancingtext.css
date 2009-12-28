@@ -1,6 +1,6 @@
 /* Layout */
 
-body { max-width: 800px; }
+body { max-width: 800px; margin: 1.6em; }
 
 .index img { float: right; }
 .index ol#articles { padding: 0; letter-spacing: 1px; list-style: none; }
