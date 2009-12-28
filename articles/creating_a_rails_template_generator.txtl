@@ -25,7 +25,7 @@ Here's what your directory tree should look like:
     `-- publish_article.erb  (the template migration)
 </pre>
 
-h2. The driver for ./script/generate article Foo bar
+Here's the code which drives the @./script/generate article Foo bar@ comand
 
 <pre>
 class ArticleGenerator < Rails::Generator::NamedBase

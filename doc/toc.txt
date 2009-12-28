@@ -1,30 +1,39 @@
-= Rails
+= Done
 Creating a rails template generator
 Creating a rails generator
 Setting up a rails app with git
+Measuring similarity with Euclidean distance
+
+== Next
+Scrum project management at Plazes
+Scrum project management at White Label Dating
+Kanban project management at White Label Dating
+Customer development at CareerMee
+Testing Ruby system/shell calls using mocks & stubs
+   - stub Kernel.system
+Collective Intel ch. 2
+
+=== Rails
 Full screen google map with rails (geokit)
 Finding people in your area (geokit)
 
-= Ruby
-Testing system shell commands using mocks & stubs
-- stub Kernel.system
-
+=== Ruby
 Blocks
 Metaprogramming
 Ruby Best Practices
+Refactoring Ruby (top 5 techniques)
 
-= Projects
+=== Projects
 Flight search engine ( Series )
 Car rental schema ( Sequel, sinatra, haml )
 Google interview qs
 
-= Project managment
-Scrum @ Plazes
-Scrum @ WLD
-Kanban @ WLD
-Customer development with CareerMee
-
-= Algorithms
-Measuring similarity with Euclidean distance
+=== Algorithms
 [CitrusByte qs]
-Collective Intel ch. 2
+
+=== Business
+Summarise Guy Kawazaki's art of the start
+Cash flow for software projects
+
+=== Misc
+Programmer productivity (monitor, touch type, skills)
