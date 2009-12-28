@@ -20,6 +20,18 @@ namespace :article do
       Article.create :title => title.humanize, :content => content_for(title), :excerpt => ENV['excerpt']
     end
   end
+  
+  desc "Catagorise all articles"
+  task :tag => :environment do
+    catagorise 'Project Management', 'management'
+    catagorise 'Ruby', 'ruby'
+    catagorise 'Rails', 'rails'
+    catagorise 'Algorithms', 'euclid'
+  end
+end
+
+def catagorise(category, keyword)
+  Article.all.each {|a| a.update_attribute(:tag, category) if a.title =~ /#{keyword}/i }
 end
 
 def title_for(article)
