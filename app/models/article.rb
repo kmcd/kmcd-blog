@@ -10,7 +10,7 @@ class Article < ActiveRecord::Base
   
   def to_html
     # TODO: cache content in column & update on edit
-    RDiscount.new( content_for(title) ).to_html
+    RedCloth.new( content_for(title) ).to_html
   end
   
   # TODO: dry up with lib/tasks/article.rake

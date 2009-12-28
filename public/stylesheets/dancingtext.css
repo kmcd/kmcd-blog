@@ -1,34 +1,29 @@
 /* Layout */
 
 body { max-width: 800px; }
-table { border-collapse: collapse; }
-table td { border: thin solid silver; padding-right: 4em; }
-table th { text-align: left; }
 
 .index img { float: right; }
-.index ol#articles { padding: 0; }
+.index ol#articles { padding: 0; letter-spacing: 1px; list-style: none; }
+.index ol#articles li { margin-bottom: 0.6em; }
 .index a { text-decoration: none; }
 .index a:hover { text-decoration: underline; }
-.index h1, .index h2 { width: 61.2%; }
-
-.show .content p { margin-bottom: 1.6em; }
-.show h3 { margin-top: 2.4em; }
-p.copyright, p.comments { margin-top: 4em; }
+.index h1, .index h2 { width: 80%; }
+.show p.author {  margin-bottom: 2.4em; }
+.show p.comments { margin-top: 4em; }
+.show h2 { margin-top: 1.6em; }
 
 /* Typography */
 
 body, body * { font: normal normal 11pt/1.6em verdana,sans-serif; }
 pre,code { font-family: 'andale sans mono', monospace; }
-pre { line-height: 1.1em; }
 h1 em, .show h1 { font-size: 1.6em; line-height: 1em; }
-
-.index #articles { list-style: none; }
 .index #articles a { font-size: 1.6em; }
-
-.show h2, .show h2 * { font-style: italic; }
+.show h1+p, .show h1+p * { font-style: italic; }
 .show .content em, .show p.comments, .show p.comments * { font-style: italic; }
-.show h3 { font-size: 1.21em; }
+.show h2 { font-size: 1.21em; }
 
 /* Color */
-body { color: dimgray; }
-em { color: black; }
+
+.index em { color: black; }
+.show { color: dimgray; }
+.show h1, .show h2 { color: black; }
