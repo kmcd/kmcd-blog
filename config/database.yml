@@ -13,10 +13,8 @@ development:
   encoding: unicode
   database: blog_development
   pool: 5
-  username: root
-  password:
   host: 127.0.0.1 
-
+  
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
@@ -40,6 +38,9 @@ test:
   encoding: unicode
   database: blog_test
   pool: 5
+  username: root
+  host: 127.0.0.1 
+  port: 5433
 
 production:
   adapter: postgresql

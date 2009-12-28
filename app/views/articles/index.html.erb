@@ -1,16 +1,13 @@
-<img src="images/keith.mcdonnell.jpg"/>
-
-<h1>
-   Welcome to <em>Keith McDonnell</em>'s articles about Ruby, Rails, Software Development and Algorithms. 
-</h1>
-
-<h2>
-   You can find <%= link_to 'my open source contributons', 'http://github.com/kmcd' %> on github and <%= link_to 'my handy code snippets', 'http://gist.github.com/kmcd' %> on gist. Also, I love to <%= link_to 'refactor ruby code', 'http://refactormycode.com/codes/recent/ruby' %>.
-</h2>
-
-<h2 class='contact'>
-   If you want to get in touch, you can contact me on my mobile: +353 87 127 3927, on skype: keithmmcdonnell, or by email: <%= email_address %>
-</h2>
+<div class='about'>
+   <img src="images/keith.mcdonnell.jpg"/>
+   
+   <h1>
+      Welcome to <em>Keith McDonnell</em>'s articles about Ruby, Rails, Software Development and Algorithms. You can find <%= link_to 'my open source contributons', 'http://github.com/kmcd' %> on github and <%= link_to 'my handy code snippets', 'http://gist.github.com/kmcd' %> on gist.</h1>
+   
+   <h2>
+      If you want to get in touch, you can contact me on my mobile: +353 87 127 3927, on skype: keithmmcdonnell, or by email: <%= email_address %></em>
+   </h2>
+</div>
 
 <ol id="articles">
    <% @articles.each do |article| %>

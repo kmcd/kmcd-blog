@@ -6,21 +6,23 @@ Full screen google map with rails (geokit)
 Finding people in your area (geokit)
 
 = Ruby
-[Teach me to code qs]
-Introduction
+Testing system shell commands using mocks & stubs
+- stub Kernel.system
+
 Blocks
 Metaprogramming
 Ruby Best Practices
-Flight search engine
+
+= Projects
+Flight search engine ( Series )
 Car rental schema ( Sequel, sinatra, haml )
-Testing system shell commands using mocks & stubs
+Google interview qs
 
 = Project managment
 Scrum @ Plazes
 Scrum @ WLD
 Kanban @ WLD
 Customer development with CareerMee
-Contracting
 
 = Algorithms
 Measuring similarity with Euclidean distance
