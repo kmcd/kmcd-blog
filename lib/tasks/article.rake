@@ -21,17 +21,18 @@ namespace :article do
     end
   end
   
-  desc "Catagorise all articles"
+  desc "Catag_withorise all articles"
   task :tag => :environment do
-    catagorise 'Project Management', 'management'
-    catagorise 'Ruby', 'ruby'
-    catagorise 'Rails', 'rails'
-    catagorise 'Algorithms', 'euclid'
+    tag_with 'Business', /customer/i
+    tag_with 'Project Management', /(scrum|kanban)/i
+    tag_with 'Rails', /rails/i
+    tag_with 'Ruby', /ruby/i
+    tag_with 'Algorithms', /euclid/i
   end
 end
 
-def catagorise(category, keyword)
-  Article.all.each {|a| a.update_attribute(:tag, category) if a.title =~ /#{keyword}/i }
+def tag_with(category, keyword_regex)
+  Article.all.each {|a| a.update_attribute(:tag, category) if a.title =~ keyword_regex }
 end
 
 def title_for(article)
