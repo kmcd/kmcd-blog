@@ -11,13 +11,13 @@ body { max-width: 800px; margin: 1.6em; }
 .index h3 { margin-top: 1.6em; }
 .show p.author {  margin-bottom: 2.4em; }
 p.comments { margin-top: 4em; }
-p.copyright { margin-top: 2.4em; }
+p.copyright { margin-top: 1.6em; }
 .show h2 { margin-top: 1.6em; }
 
 /* Typography */
 
 body, body * { font: normal normal 11pt/1.6em verdana,sans-serif; }
-pre,code { font-family: 'andale sans mono', monospace; }
+pre,code { font-family: monospace; }
 h1 em, .show h1 { font-size: 1.6em; line-height: 1em; }
 .show h2, .index h3 { font-size: 1.21em; }
 
@@ -27,5 +27,6 @@ h1 em, .show h1 { font-size: 1.6em; line-height: 1em; }
 /* Color */
 
 body { color: dimgray; }
+pre,code { color: black; }
 .index em { color: black; }
 .show h1, .show h2, h3 { color: black; }

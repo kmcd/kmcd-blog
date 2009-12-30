@@ -1,39 +1,41 @@
 = Done
-Creating a rails template generator
-Creating a rails generator
-Setting up a rails app with git
-Measuring similarity with Euclidean distance
+   Creating a rails template generator
+   Creating a rails generator
+   Setting up a rails app with git
+   Measuring similarity with Euclidean distance
 
-== Next
-Scrum project management at Plazes
-Scrum project management at White Label Dating
-Kanban project management at White Label Dating
-Customer development at CareerMee
-Testing Ruby system/shell calls using mocks & stubs
-   - stub Kernel.system
-Collective Intel ch. 2
+= WIP (5)
+   Scrum project management at Plazes
+   Scrum project management at White Label Dating
+   Kanban project management at White Label Dating
+   Customer development at CareerMee
+   Testing Ruby system/shell calls using mocks & stubs (stub Kernel.system)
 
-=== Rails
-Full screen google map with rails (geokit)
-Finding people in your area (geokit)
+= Backlog
+== Algorithms
+   Collective Intel ch. 2
+   Soduku solver (Norvig)
+   [CitrusByte qs]
+   Netflix prize
 
-=== Ruby
-Blocks
-Metaprogramming
-Ruby Best Practices
-Refactoring Ruby (top 5 techniques)
+== Business
+   Summarise Guy Kawazaki's art of the start
+   Cash flow for software projects
 
-=== Projects
-Flight search engine ( Series )
-Car rental schema ( Sequel, sinatra, haml )
-Google interview qs
+== Rails
+   Full screen google map with rails (geokit)
+   Finding people in your area (geokit)
 
-=== Algorithms
-[CitrusByte qs]
+== Ruby
+   Refactoring Ruby (top 5 techniques)
+   Blocks
+   Metaprogramming
+   Ruby Best Practices
 
-=== Business
-Summarise Guy Kawazaki's art of the start
-Cash flow for software projects
+== Projects
+   Flight search engine ( Series )
+   Car rental schema ( Sequel, sinatra, haml )
+   Google interview qs
 
-=== Misc
-Programmer productivity (monitor, touch type, skills)
+== Misc
+   Programmer productivity (monitor, touch type, skills)
