@@ -1,6 +1,6 @@
 /* Layout */
 
-body { max-width: 800px; margin: 1.6em; }
+body { max-width: 600px; margin: 1.6em; }
 p.comments { margin-top: 4em; }
 p.copyright { margin-top: 1.6em; }
 
@@ -8,11 +8,11 @@ p.copyright { margin-top: 1.6em; }
 .index ol#articles li { margin-bottom: 0.6em; }
 .index a { text-decoration: none; }
 .index a:hover { text-decoration: underline; }
-.index h1, .index h2 { width: 80%; }
-.index h2 { padding: 2.5px 5px; margin-top: 1.6em; clear: both; }
+.index img { float: right; }
+.index .about { overflow: hidden; }
+.index h2 { padding: 2.5px 5px; margin-top: 1.6em;  }
 .index h2 tr td:first-child { padding-right: 1.6em; }
 .index h3 { margin-top: 1.6em; }
-.index img { float: left; margin-right: 1em; margin-bottom: 1em; }
 
 .show p.author {  margin-bottom: 2.4em; }
 .show h2 { margin-top: 1.6em; }

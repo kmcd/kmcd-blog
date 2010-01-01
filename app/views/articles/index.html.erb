@@ -3,30 +3,29 @@
    
    <h1>
       I, <em>Keith McDonnell</em>, am a software developer with 10+ years experience specialising in Ruby, Rails and project management (Scrum &amp; Kanban). 
-      <br/>
       All of <%= link_to 'my open source contributons', 'http://github.com/kmcd' %> are on github and here's <%= link_to 'my CV (or resume)', 'keith.mcdonnell.pdf' %>.
    </h1>
-   
-   <h2>
-      I want to make YOUR software project a success. For world class Ruby, Rails &amp; project management, please contact me:
-      
-      <table>
-         <tr>
-            <td>email</td>
-            <td><%= email_address %></td>
-         </tr>
-         <tr>
-            <td>mobile</td>
-            <td>+353 87 127 3927</td>
-         </tr>
-         <tr>
-            <td>skype</td>
-            <td>keithmmcdonnell</td>
-         </tr>
-         
-      </table>
-   </h2>
 </div>
+
+<h2>
+   I want to make YOUR software project a success. For world class Ruby, Rails &amp; project management, please contact me:
+   
+   <table>
+      <tr>
+         <td>email</td>
+         <td><%= email_address %></td>
+      </tr>
+      <tr>
+         <td>mobile</td>
+         <td>+353 87 127 3927</td>
+      </tr>
+      <tr>
+         <td>skype</td>
+         <td>keithmmcdonnell</td>
+      </tr>
+      
+   </table>
+</h2>
 
 <% @articles.group_by(&:tag).sort_by(&:first).each do |category, articles| -%>
    <%= content_tag :h3, category -%>
