@@ -15,12 +15,17 @@ Flight search engine
 Car rental schema ( Sequel, sinatra, haml )
 Testing system shell commands using mocks & stubs
 
+= Learning
+Dreyfus model
+Ruby/Rails videos
+
 = Project managment
 Scrum @ Plazes
 Scrum @ WLD
 Kanban @ WLD
 Customer development with CareerMee
 Contracting
+Estimating with story points & velocity
 
 = Algorithms
 Measuring similarity with Euclidean distance
