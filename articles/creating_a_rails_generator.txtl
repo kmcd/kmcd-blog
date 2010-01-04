@@ -2,7 +2,7 @@ In this article, I'll show you how a *custom generator* can speed up your Rails 
 
 If you've coded even the most basic Rail app you'll be familiar with generators. We let @./script/generate@ & friends automate mundane & error prone tasks and leave us to get on with the fun stuff. If you're _not_ familiar with generators just read the "Rails command line guide":http://guides.rubyonrails.org/command_line.html and expiriment with @./script/generate@ from the root of a Rails app directory.
 
-h3. Create a new app with a RailCasts style UI
+h2. Create a new app with a RailCasts style UI
 
 Here's a quick way to create a new rails app with "Railscasts":http://railscasts.com style presentation. The idea being that when you want to watch a new episode you can:
 # create a new rails app @rails_metal@
@@ -45,7 +45,7 @@ end
 
 You can use this technique to automate any static file creation or copying, e.g. if you want to have different stylesheets for development and production. 
 
-h3. References
+h2. References
 
 * "Rails API":http://api.rubyonrails.org/classes/Rails/Generator/Base.html
 * "Creating generator Rails guide":http://guides.rubyonrails.org/plugins.html#generators

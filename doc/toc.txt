@@ -1,19 +1,15 @@
-= Rails
-Creating a rails template generator
-Creating a rails generator
-Setting up a rails app with git
-Full screen google map with rails (geokit)
-Finding people in your area (geokit)
+= Done
+   Creating a rails template generator
+   Creating a rails generator
+   Setting up a rails app with git
+   Measuring similarity with Euclidean distance
 
-= Ruby
-[Teach me to code qs]
-Introduction
-Blocks
-Metaprogramming
-Ruby Best Practices
-Flight search engine
-Car rental schema ( Sequel, sinatra, haml )
-Testing system shell commands using mocks & stubs
+= WIP (5)
+   Scrum project management at Plazes
+   Scrum project management at White Label Dating
+   Kanban project management at White Label Dating
+   Customer development at CareerMee
+   Testing Ruby system/shell calls using mocks & stubs (stub Kernel.system)
 
 = Learning
 Dreyfus model
@@ -27,7 +23,31 @@ Customer development with CareerMee
 Contracting
 Estimating with story points & velocity
 
-= Algorithms
-Measuring similarity with Euclidean distance
-[CitrusByte qs]
-Collective Intel ch. 2
+= Backlog
+== Algorithms
+   Collective Intel ch. 2
+   Soduku solver (Norvig)
+   [CitrusByte qs]
+   Netflix prize
+
+== Business
+   Summarise Guy Kawazaki's art of the start
+   Cash flow for software projects
+
+== Rails
+   Full screen google map with rails (geokit)
+   Finding people in your area (geokit)
+
+== Ruby
+   Refactoring Ruby (top 5 techniques)
+   Blocks
+   Metaprogramming
+   Ruby Best Practices
+
+== Projects
+   Flight search engine ( Series )
+   Car rental schema ( Sequel, sinatra, haml )
+   Google interview qs
+
+== Misc
+   Programmer productivity (monitor, touch type, skills)

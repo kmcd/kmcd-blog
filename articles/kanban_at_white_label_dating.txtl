@@ -1,0 +1,41 @@
+Background story ...
+
+* Project managed for 4 months with Scrum
+* CEO comes in 4 weeks to deadline & changes everything
+* Oops!
+* Let's try Kanban
+
+h2. What is Kanban ?
+
+* Process management
+* Toyota production system
+* Visualise workflow (information radiator)
+* Limit work in progress
+* Calculate cycle time
+
+h2. Visualise workflow
+
+* Board description
+* Backlog/next/devel/review/accept/done
+
+h2. Limit work in progress
+
+* Limits on each state
+* Pull system
+
+h2. Calculate cycle time
+
+* Story points & velocity
+* From development to done (exclude backlog & next)
+* 7 for a team of 3 devs
+
+h2. XP practices
+
+* Code review
+* Daily stand up
+* Unit testing
+
+h2. Further reading
+
+* "Henrik Kniberg comparison of Scrum and Kanban":http://www.crisp.se/henrik.kniberg/Kanban-vs-Scrum.pdf
+* "Converting a Scrum team to Kanban":http://www.crisp.se/mattias.skarin/scrumtokanban.pdf

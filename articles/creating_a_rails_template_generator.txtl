@@ -11,7 +11,7 @@ So, we'd like to run @./script/generate article Rails Rulez@ which:
 # Generates a new migration named rails_rules.rb
 # Create a textile file named rails_rules.txtl for the article content
 
-h3. Create the generator directory structure
+h2. Create the generator directory structure
 
 If you'll only use the generator in one Rails app, create your custom generator in  @lib/generators@. If you'll only use the generator in many Rails apps, create your custom generator @~/.rails/generators@
 
@@ -25,7 +25,7 @@ Here's what your directory tree should look like:
     `-- publish_article.erb  (the template migration)
 </pre>
 
-h3. The driver for ./script/generate article Foo bar
+Here's the code which drives the @./script/generate article Foo bar@ comand
 
 <pre>
 class ArticleGenerator < Rails::Generator::NamedBase
@@ -54,7 +54,7 @@ Obviously, there are some composed methods & a constant missing. The main points
 # You can pass local variables to your ERB files by passing a hash (see @migration_template@)
 # Any methods you define in your custom generator are available in your ERB templates!
 
-h3. A sample migration
+h2. A sample migration
 
 <pre>
 class <%= migration_class_name %> < ActiveRecord::Migration
@@ -70,7 +70,7 @@ class <%= migration_class_name %> < ActiveRecord::Migration
 end
 </pre>
 
-h3. Where to go from here?
+h2. Where to go from here?
 
 You can use template generators to slash through any repetitive Rails coding. For example, when creating REST controllers you could use a generator to create some or all of the REST actions: ./script/generate rest_controller Rates index show.
 
@@ -79,7 +79,7 @@ If you think your generators might be useful to the wider community, why not rel
 See the "Rails  generator  guide":http://guides.rubyonrails.org/plugins.html#generators for how to test your custom generators.
 
 
-h3. References
+h2. References
 
 * "Rails API":http://api.rubyonrails.org/classes/Rails/Generator/Base.html
 * "Creating generator Rails guide":http://guides.rubyonrails.org/plugins.html#generators

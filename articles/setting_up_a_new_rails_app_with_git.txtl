@@ -8,7 +8,7 @@ If you haven't already, you'll need to install the following software (on Ubuntu
 # rails @$ sudo gem install rails sqlite@
 # git @$ sudo apt-get install -Y git-core@
 
-h3. Lets setup a new rails app with git source control
+h2. Lets setup a new rails app with git source control
 
 # Create a brand new rails application @$ rails APP_NAME@
 # Then Change into the root directory @$ cd APP_NAME@
@@ -30,7 +30,7 @@ Congratulations! You're now good to go with git & rails.
 
 All your work thusfar has been saved on your computer. So how do you share your work with others? You'll have to create a shared repository. You can store your shared repository on a server and access it via SSH or use a hosted service such as "github":http://github.com or "unfuddle":http://unfuddle.com .
 
-h3. A day in the life of a rails git project
+h2. A day in the life of a rails git project
 
 * Setup local git repository (see main section above)
 * Setup remote git repository (see sharing your work section above)
@@ -41,7 +41,7 @@ h3. A day in the life of a rails git project
 * Share your work (assuming you have a remote repository set up) @git push origin master@
 * Fetch lastest changes from remote repository @git pull origin master@
 
-h3. References
+h2. References
 
 * "Railcasts git screencast":http://railscasts.com/episodes/96-git-on-rails
 * "GitCasts":http://gitcasts.com

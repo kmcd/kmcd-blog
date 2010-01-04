@@ -1,0 +1,61 @@
+This article is a business retrospective of my time at Careermee. After leaving the company I discovered Steve Blank's Customer development process and he eerily described all of the mistakes we made ...
+
+h2.  Background
+
+While I was working at (recently acquired by Nokia) Plazes, I received an offer to join MBA recruitment startup "Careermee":http://careermee.com in August 2008 and move to Barcelona.
+
+In hindsight, Auturm 2008 was probably the worst time in history to start an executive recruitement company. The recession really got going in early 2009 and most Fortune 500 companys had a hiring freeze in place.
+
+So, I joined the Matt , Florian, Benny & Steve in Calle Ferran, Barcelona (one of the busier streets just off the Plaza Nueva).
+
+h2. What is Customer development ?
+
+Customer development focuses on *understanding customer problems* and needs from day one. The idea is to list all your hypothosses about your business model, customers etc. and test them in the field. 
+
+The process has four distinct phases (as seen below). An early stage company need only concern itself with phases 1 & 2, culminating selling your product to a handful of early evangelist customers & building a repeatable sales process.
+
+!http://jussilaakkonen.files.wordpress.com/2008/11/customer-development-overview.png?w=450&h=283!
+
+h2. Customer discovery
+
+The goal of the customer discovery phase is:
+
+bq. "finding out who the customers for your product are and whether the problem you believe you are solving is important to them" [1]
+
+After 6 months of hardcore development, we didn't even get this far. We were working in a vacuum with no feedback from potential customers. What we should have been doing was:
+
+# identifying the market type (new, niche, low cost etc.)
+# list all hypothoses regarding customers, market size, pricing etc.
+# calling 50 most promising companies from the Fortune 500
+# getting meetings (online, phone or face to face) to TEST all hypothoses listed in step 2
+# sharing information gathered with the whole team
+
+And do all of the above BEFORE ANY CODE IS WRITTEN!
+
+h2. Customer validation
+
+Once you have established that there _may_ be a market and you have a *list of potential customers*, move on to customer validation; where the goal is to build a
+
+bq. "repeatable sales process that has been field-tested by successfully selling the product to early customers" [1]
+
+As I said earlier, we didn't even get to customer discovery at Careermee. We had an idea of our target market (Fortune 500 companies) but no clue why they would choose us over a headhunder or their existing HR tools and processes. We were operating on a build it and how could they possiby refuse such a cool service.
+
+h2. Conclusion
+
+I didn't bother with customer creation or company building. We should have been so lucky to get that far. Here's a few lessons learned from the crater we left:
+
+* An early stage business is NOT an existing company in miniature. We had a 4 people in our sales department and no ideas who our customers were.
+* Instead, focus on continous contact with potential customers from day one.
+* Share your company cash flow with the whole team. Nothing will help you prioritise your feature list better than customer feedback, good estimates and cash flow.
+
+I should add that this is all hindsight on my part. I found out about customer development _after_ I left the company. 
+
+h2. Further reading
+
+* "The Four Steps to the Epiphany":http://www.amazon.com/Four-Steps-Epiphany-Steven-Blank/dp/0976470705/ref=sr_1_1?ie=UTF8&s=books&qid=1262186543&sr=8-1
+* "Startup lessons learned":http://www.startuplessonslearned.com/search/label/customer%20development
+* "Lean startup circle":http://groups.google.com/group/lean-startup-circle
+
+h2. References
+
+fn1. "The Four Steps to the Epiphany", ch. 1; by Steve Blank
