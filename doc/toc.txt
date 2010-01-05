@@ -5,6 +5,7 @@
    Measuring similarity with Euclidean distance
    Customer development at CareerMee
    Testing Ruby system/shell calls using mocks & stubs (stub Kernel.system)
+   Summarise Guy Kawazaki's art of the start
    
 = WIP (5)
    Scrum project management at Plazes
@@ -20,7 +21,6 @@
    Netflix prize
 
 == Business
-   Summarise Guy Kawazaki's art of the start
    Cash flow for software projects
 
 == Rails
