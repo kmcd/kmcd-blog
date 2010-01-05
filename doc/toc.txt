@@ -3,15 +3,16 @@
    Creating a rails generator
    Setting up a rails app with git
    Measuring similarity with Euclidean distance
-
+   Customer development at CareerMee
+   Testing Ruby system/shell calls using mocks & stubs (stub Kernel.system)
+   
 = WIP (5)
    Scrum project management at Plazes
    Scrum project management at White Label Dating
    Kanban project management at White Label Dating
-   Customer development at CareerMee
-   Testing Ruby system/shell calls using mocks & stubs (stub Kernel.system)
 
 = Backlog
+
 == Algorithms
    Collective Intel ch. 2
    Soduku solver (Norvig)
@@ -39,3 +40,11 @@
 
 == Misc
    Programmer productivity (monitor, touch type, skills)
+   
+== Learning
+   Dreyfus model
+   Ruby/Rails videos
+
+== Project managment
+   Contracting
+   Estimating with story points & velocity

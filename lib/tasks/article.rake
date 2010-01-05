@@ -23,7 +23,8 @@ namespace :article do
   
   desc "Catag_withorise all articles"
   task :tag => :environment do
-    tag_with 'Business', /customer/i
+    tag_with 'Miscellaneous', /\w+/
+    tag_with 'Business', /(customer|kawazaki)/i
     tag_with 'Project Management', /(scrum|kanban)/i
     tag_with 'Rails', /rails/i
     tag_with 'Ruby', /ruby/i
