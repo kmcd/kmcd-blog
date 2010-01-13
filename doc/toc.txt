@@ -1,18 +1,16 @@
-= Done
-   Creating a rails template generator
-   Creating a rails generator
-   Setting up a rails app with git
-   Measuring similarity with Euclidean distance
-   Customer development at CareerMee
-   Testing Ruby system/shell calls using mocks & stubs (stub Kernel.system)
-   
-= WIP (5)
+= WIP (3)
    Scrum project management at Plazes
    Scrum project management at White Label Dating
    Kanban project management at White Label Dating
-
-= Backlog
-
+   
+= Next (3)
+   Refactoring Ruby (top 5 techniques)
+   Development links 
+      * Unix power tools
+      * Cheat sheets (CSS, html, regex, rails, git)
+      * Ruby (1.8.7 rdoc)
+      * Rails (guides, searchable doc)
+      
 == Algorithms
    Collective Intel ch. 2
    Soduku solver (Norvig)
@@ -20,15 +18,13 @@
    Netflix prize
 
 == Business
-   Summarise Guy Kawazaki's art of the start
    Cash flow for software projects
-
+   
 == Rails
    Full screen google map with rails (geokit)
    Finding people in your area (geokit)
 
 == Ruby
-   Refactoring Ruby (top 5 techniques)
    Blocks
    Metaprogramming
    Ruby Best Practices
@@ -38,7 +34,7 @@
    Car rental schema ( Sequel, sinatra, haml )
    Google interview qs
 
-== Misc
+== Software development
    Programmer productivity (monitor, touch type, skills)
    
 == Learning
@@ -48,3 +44,12 @@
 == Project managment
    Contracting
    Estimating with story points & velocity
+   Lean (John Seddon, Lean UK 2009)
+      1. Do not apply same principles from manufacturing to services
+      2. Study your process and follow a piece of work from entrance to exit (value work and wasted work)
+      3. Study demand and see which is predictable and address it using another system
+      4. Identify system's conditions for creating waste, not activities performed by people
+      5. Change is emerging, something you never plan for
+      6. Putting control in the hand of the workers give you more control than you ever had
+      7. Never manage with targets, never manage with other arbitrary measures unless you're going over a clif
+      8. Use measures that derive from purpose and put them in the hand of the workers

@@ -4,8 +4,9 @@ namespace :article do
   desc "Re-generate all articles from textile source"
   task :update => :environment do
     Article.destroy_all
+    
     Dir["#{RAILS_ROOT}/articles/*.*"].each do |article|
-    Article.create! :content => File.open(article).read, :title => title_for(article)
+      Article.create! :content => File.open(article).read, :title => title_for(article)
     end
   end
   

@@ -1,0 +1,3 @@
+= Todo
+
+Remove article:update rake task. Update articles with caching instead.
