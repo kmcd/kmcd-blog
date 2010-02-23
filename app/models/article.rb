@@ -13,6 +13,10 @@ class Article < ActiveRecord::Base
     RedCloth.new( content_for(title) ).to_html
   end
   
+  def tag
+    self[:tag] || 'Miscellaneous'
+  end
+  
   # TODO: dry up with lib/tasks/article.rake
   def content_for(title)
     if RAILS_ENV == 'development' 

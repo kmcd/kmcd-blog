@@ -22,7 +22,7 @@ namespace :article do
     end
   end
   
-  desc "Catag_withorise all articles"
+  desc "Catagorise all articles for home page table of contents"
   task :tag => :environment do
     tag_with 'Miscellaneous', /\w+/
     tag_with 'Business', /(customer|kawazaki)/i
