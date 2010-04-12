@@ -1,8 +1,0 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-writing_a_generator:
-  title: "Writing a generator"
-  content: "*Generators*"
-
-two:
-  title: MyString
-  content: MyText
