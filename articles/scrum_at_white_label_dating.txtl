@@ -1,0 +1,70 @@
+---
+title:  Scrum at White Label Dating
+tags:   Project management
+---
+
+After finishing up with Careermee, I moved from Berlin to start working with "White Label Dating":http://www.whitelabeldating.com. They offer a 'white label' service which provides you with active members for your own dating site.
+
+The first project was alredy 6 weeks underway when I arrived. The aim of the project was to provide a data warehouse style app, which could (amoungst other things) :
+* track conversions from adwords campaigns
+* view members demographics
+* view site churn ( sign up / upgrade/ dowgrade )
+* provide charts & reports for all site activity
+
+The team consisted of 1 experienced & 1 junior Rails developer working off a series of mockups provided by the data analysis guy.
+
+Seeing that there was no defined software process in place, I printed off number copies of "Scrum and XP from the trenches":http://www.crisp.se/henrik.kniberg/ScrumAndXpFromTheTrenches.pdf and had a suggested to the team and CTO that we try Scrum.
+
+h2. Product backlog
+
+We agreed to manage the project using Scrum, we sat down together and created a procuct backlog. This was a really simple spread sheet, created from the wireframes already in use. 
+
+Firstly, we estimated (in days) each screen would take. We then ordered the screens based on technical risk and created a release plan. We then re-prioritised the backlog & release plan with the CTO based on business criteria.
+
+h2. Fixed iterations aka Sprints
+
+We also agreed to work in three week sprints, starting with a planning session and finishing with a product demonstration and retrospective.
+
+I set up the Scrum board exactly as described in "Scrum and XP from the trenches":scrumxp , with story cards were created straight from the product backlog.
+
+!http://rndsolutions.net/wp-content/uploads/2009/03/scrum_and_xp1.png!
+
+Every day at 09:30, we had a stand up at the sprint board, each in turn answering the usual questions:
+# What I did yesterday
+# What I did yesterday
+# Any impedimets
+
+After the stand up I updated the burndown with any completed features.
+
+h2. Demo day
+
+We held the sprint demo in the conference room with the development team, CTO and our product owner (Laura from the parter team). The meeting was limited to an hour where we:
+
+* demonstrated the features we committed to release
+* updated the product backlog and release plan
+* decided what features to work on in the next sprint
+
+h2. Retrospectives
+
+After each demonstration, the development team had a quick chat about what was good, bad or indifferent about the previous sprint. I used the nokia test to help structure your retrospectives; can you anwser the following questions:
+
+* Iterations must be timeboxed to less than 4 weeks
+* Software features must be tested and working at the end of each iteration
+* The Iteration must start before specification is complete
+* You know who the product owner is
+* There is a product backlog prioritized by business value
+* The product backlog has estimates created by the team
+* The team generates burndown charts and knows their velocity
+* There are no project managers (or anyone else) disrupting the work of the team
+
+If not, what can the team do to rectify the situation?
+
+h2. Lessons learned
+
+# Beware the stealth holder! Is your product owner really the person with the final say? In our case, other managers would swing in periodically and totally harsh our agile buzz. And that's just the way it is ...
+# No work in progress limits, ie we had quite a bit of task switching during a sprint.
+# Demo crunch time; we couldn't seem to shake the double down work a day or two before the demo.
+
+h2. Further reading
+
+* "Scrum and XP from the trenches":http://www.crisp.se/henrik.kniberg/ScrumAndXpFromTheTrenches.pdf

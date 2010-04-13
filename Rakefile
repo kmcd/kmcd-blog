@@ -1,0 +1,2 @@
+namespace :blog do
+end

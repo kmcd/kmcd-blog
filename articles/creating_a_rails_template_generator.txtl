@@ -1,0 +1,93 @@
+---
+title:  Creating a Rails template generator
+tags:   Rails
+---
+
+I use a simple Rails app to publish my articles online. However, each time I
+want to create a new article, I must:
+
+# Generate a new migration
+# Create a textile file for the article content
+# Make sure the article content file name and migration name match
+
+Sounds boring and error prone. Wouldn't @./script/generate article Rails Rulez@ be better? Template custom generators to the rescue!
+
+So, we'd like to run @./script/generate article Rails Rulez@ which:
+# Generates a new migration named rails_rules.rb
+# Create a textile file named rails_rules.txtl for the article content
+
+h2. Create the generator directory structure
+
+If you'll only use the generator in one Rails app, create your custom generator in  @lib/generators@. If you'll only use the generator in many Rails apps, create your custom generator @~/.rails/generators@
+
+Here's what your directory tree should look like:
+
+<pre>
+|-- USAGE                    (help file)
+|-- article_generator.rb     (this file drives ./script/generate article)
+`-- templates
+    |-- article.txtl         (the template textile file)
+    `-- publish_article.erb  (the template migration)
+</pre>
+
+Here's the code which drives the @./script/generate article Foo bar@ comand
+
+<pre>
+class ArticleGenerator < Rails::Generator::NamedBase
+  def manifest 
+    record do |m|
+      # Create artiles directory
+      m.directory ARTICLE_DIR
+      
+      # Create template article
+      m.template "article.txtl", article_file_path
+      
+      # Create article migration
+      m.migration_template "publish_article.rb", "db/migrate", 
+        :migration_file_name => "publish_#{escaped_file_name}"
+    end
+  end
+end
+</pre>
+
+Obviously, there are some composed methods & a constant missing. The main points to note about the driver file are:
+# The class name must match the parent directory @ArticleGenerator@ and generator name
+# The class inherits from @Rails::Generator::NamedBase@ as the generator takes arguments
+# All the work is done in the @record@ block of the @manifest@ method
+# If you want to use ERB to generate custom code (insead of a simple copy & paste), use @m.template@
+# Use @m.migration_template@ to create a migration from an ERB file
+# You can pass local variables to your ERB files by passing a hash (see @migration_template@)
+# Any methods you define in your custom generator are available in your ERB templates!
+
+h2. A sample migration
+
+<pre>
+class <%= migration_class_name %> < ActiveRecord::Migration
+  def self.up
+    Article.create :title => "<%= article_title.humanize %>", 
+      :content => get_article, 
+      :excerpt => ""
+  end
+
+  def self.down
+    Article.find_by_title('<%= article_title.humanize %>').destroy rescue nil
+  end
+end
+</pre>
+
+h2. Where to go from here?
+
+You can use template generators to slash through any repetitive Rails coding. For example, when creating REST controllers you could use a generator to create some or all of the REST actions: ./script/generate rest_controller Rates index show.
+
+If you think your generators might be useful to the wider community, why not release them on rubyforge or github?
+
+See the "Rails  generator  guide":http://guides.rubyonrails.org/plugins.html#generators for how to test your custom generators.
+
+
+h2. References
+
+* "Rails API":http://api.rubyonrails.org/classes/Rails/Generator/Base.html
+* "Creating generator Rails guide":http://guides.rubyonrails.org/plugins.html#generators
+* "Railscasts":http://railscasts.com/episodes/58-how-to-make-a-generator
+* "Aidan Finn's excellent tutorial":http://www.aidanf.net/rails/creating-your-own-generators-in-rails
+* "Ryan Bates nifty generators":http://github.com/ryanb/nifty-generators

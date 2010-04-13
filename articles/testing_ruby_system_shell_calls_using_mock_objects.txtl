@@ -1,0 +1,40 @@
+---
+title:  Testing Ruby system shell calls using Mock objects
+tags:   Ruby, testing
+---
+
+h2. Problem
+
+You want to test Ruby code which calls shell commands, e.g.
+
+<pre>
+  Kernel.system "ls -l"
+  `df -f`
+  %x( du -sh ) 
+</pre>
+
+h2. Solution
+
+Use mock object expectations to test that the method was called with the correct arguments.
+
+<pre>
+  def list_files
+    Kernel.system "ls -l"
+  end
+  
+  require 'test/unit'
+  require 'mocha'
+  
+  class FileListingTestCase < Test::Unit::TestCase
+    def test_file_listing
+      Kernel.expects(:system).with "ls -l"
+      list_files
+    end
+  end
+</pre>
+
+Unfortunately, I havn't been able to find a way to test the backtick @`ls -l`@ or macro @%x( ls -l )@ with mocks. So you must use @Kernel.system@ which isn't as pretty as the backtick or macro options.
+
+h2. Further reading
+
+* "Mocha":http://mocha.rubyforge.org A straightforward mock & stub library for Ruby
