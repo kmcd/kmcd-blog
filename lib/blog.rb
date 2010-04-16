@@ -14,6 +14,7 @@ class Blog < Sinatra::Application
   end
   
   get /^\/(\w+.*)\.html$/ do |title|
+    response.headers['Cache-Control'] = 'public, max-age=44640' # 31 days
     @article = Article.new title
     erb :show
   end
