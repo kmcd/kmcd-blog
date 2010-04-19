@@ -18,8 +18,10 @@ p.copyright { margin-top: 1.6em; }
 body, body * { font: normal normal 11pt/1.6em verdana,sans-serif; }
 pre,code { font-family: monospace; }
 .show .content em, .show p.comments, .show p.comments *, p.copyright, 
-   p.copyright *, .index dt { font-style: italic; }
+   p.copyright *, .index dt, .show p.author, .show p.author * { font-style: italic; }
 .about em { font-size: 1.6em; }
+.show h1 { font-size: 1.6em; }
+.show h2 { font-size: 1.36em; }
 
 /* Color */
 
@@ -27,3 +29,6 @@ body { color: dimgray; }
 .index img { border: thin solid silver; }
 pre,code, strong, em { color: black; }
 .index td { color: black; }
+.show h1 { color: black; }
+.show h2 { color: black; }
+

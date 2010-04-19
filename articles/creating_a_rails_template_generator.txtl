@@ -1,6 +1,6 @@
 ---
 title:  Creating a Rails template generator
-tags:   Rails
+tag:   Rails
 ---
 
 I use a simple Rails app to publish my articles online. However, each time I

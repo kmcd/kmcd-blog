@@ -29,7 +29,7 @@
    
    <p>Here are the articles I've written on &hellip;</p>
    <dl>
-   <% @articles.group_by {|a| a.tags }.sort_by {|a| a.first }.each do |group| %>
+   <% @articles.group_by {|a| a.tag }.sort_by {|a| a.first }.each do |group| %>
       <dt><%= group.first %></dt>
       <% group.last.sort_by {|a| a.title }.each do |article| %>
       <dd>
@@ -37,11 +37,4 @@
       </dd>
       <% end %>
    <% end %>
-   
-   <p class='copyright'>
-      Copyright
-      <a href='http://creativecommons.org/licenses/by-sa/2.5/'>&copy;</a>
-      2006 &mdash; 2010
-      by <a href="/">Keith McDonnell</a>.
-   </p>
 </div>

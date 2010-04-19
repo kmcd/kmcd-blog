@@ -3,7 +3,7 @@
    <head>
       <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
       <link href="dancingtext.css" rel="stylesheet" type="text/css" media="screen"/>
-      <title>Keith McDonnell</title>
+      <title><%= title %></title>
    </head>
    <body>
       <%= yield %>
@@ -17,5 +17,12 @@
       var pageTracker = _gat._getTracker("UA-8421111-1");
       pageTracker._trackPageview();
       } catch(err) {}</script>
+      
+      <p class='copyright'>
+         Copyright
+         <a href="http://creativecommons.org/licenses/by-sa/2.5/">&copy;</a>
+         2006 &mdash; 2010
+         by <a href="http://keithmcdonnell.net">Keith McDonnell</a>.
+      </p>
    </body>
 </html>

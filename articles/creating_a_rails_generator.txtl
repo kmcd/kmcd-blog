@@ -1,6 +1,6 @@
 ---
 title:  Creating a Rails generator
-tags:   Rails
+tag:   Rails
 ---
 
 In this article, I'll show you how a *custom generator* can speed up your Rails workflow by copying some boilerplate code. For example, instead of copying and pasting CSS and HTML layout you can create a generator to do this for you.

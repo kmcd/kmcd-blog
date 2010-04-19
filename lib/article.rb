@@ -1,3 +1,6 @@
+require 'rake'
+require 'redcloth'
+
 class Article
   def initialize(title)
     @file_name = title.match(/articles\/\w.*\.txtl/) ? title : 'articles/' + title + '.txtl'
@@ -12,8 +15,8 @@ class Article
     RedCloth.new(content_markup).to_html
   end
   
-  def tags
-    info['tags']
+  def tag
+    info['tag']
   end
   
   def title

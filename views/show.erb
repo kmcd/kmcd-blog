@@ -1,7 +1,7 @@
 <div class='show'>
    <h1><%= @article.title %></h1>
    
-   <p class='author'>Written by <a href="/">Keith McDonnell</a>. Last updated on 
+   <p class='author'>Written by <a href="http://www.keithmcdonnell.net">Keith McDonnell</a>. Last updated on 
    <%= @article.updated_at.strftime("%A, %B %d, %Y") %>.</p>
    
    <div class='content'>                                 
@@ -12,12 +12,5 @@
       If you&apos;d like to discuss this article, you can send me an email 
       <a href="mailto:<%= email_address %>"><%= email_address %></a> and/or 
       publish an article online and link back to this page.
-   </p>
-   
-   <p class='copyright'>
-      Copyright
-      <a href="http://creativecommons.org/licenses/by-sa/2.5/">&copy;</a>
-      2006 &mdash; 2010
-      by <a href="/">Keith McDonnell</a>.
    </p>
 </div>

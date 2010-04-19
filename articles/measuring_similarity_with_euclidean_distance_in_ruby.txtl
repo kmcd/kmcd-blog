@@ -1,6 +1,6 @@
 ---
 title:  Measuring similarity with Euclidean distance in Ruby
-tags:   Algorithms
+tag:   Algorithms
 ---
 
 We can use  Euclidean distance to measure the similarity between reviewer and rated films, given a list of reviewer, films and a reviewer rating for each film. 
