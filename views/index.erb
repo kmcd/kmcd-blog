@@ -31,7 +31,7 @@
    <dl>
    <% @articles.group_by {|a| a.tags }.sort_by {|a| a.first }.each do |group| %>
       <dt><%= group.first %></dt>
-      <% group.last.each do |article| %>
+      <% group.last.sort_by {|a| a.title }.each do |article| %>
       <dd>
          <a href="<%= article.file_name %>"><%= article.title %></a>
       </dd>
