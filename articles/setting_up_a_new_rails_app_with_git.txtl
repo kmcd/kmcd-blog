@@ -1,6 +1,6 @@
 ---
 title:  Setting up a new Rails app with Git
-tags:   Rails, git
+tags:   Rails
 ---
 
 For the purposes of this tutorial I'll assume you have a working *UNIX like operating system*, such as Linux or Apple Mac OS X. You can also use cygwin for windows but you _really should_ "get a better computer":http://farm1.static.flickr.com/87/240803829_9212773615_o.png .
