@@ -25,7 +25,7 @@ class Article
   
   def updated_at
     return Date.today unless info['date']
-    Date.parse(info['date']).to_s
+    Date.parse(info['date'])
   end
   
   def file_name

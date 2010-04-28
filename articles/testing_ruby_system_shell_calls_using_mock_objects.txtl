@@ -1,6 +1,7 @@
 ---
 title:  Testing Ruby system shell calls using Mock objects
 tag:   Ruby
+date:  Apr 1 2010
 ---
 
 h2. Problem

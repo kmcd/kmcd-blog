@@ -1,6 +1,7 @@
 ---
 title:  Calculating Euclidean distance in Ruby
 tag:   Algorithms
+date:  Nov 6 2009
 ---
 
 Simply put, Euclidean distance is the shortest distance between two points. The kind of distance you would measure with a ruler. e.g. Calculate distance C in the diagram below.

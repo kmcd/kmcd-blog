@@ -25,10 +25,10 @@
 
 <ol id='articles'>
    <li><a href="#">All articles RSS feed</a></li>
-   <% @articles.sort_by {|a| a.updated_at }.each do |article| %>
+   <% @articles.sort_by {|a| a.updated_at }.reverse.each do |article| %>
    <li>
       <a href="<%= article.file_name %>"><%= article.title %></a>
-      <span><%= article.updated_at.strftime "%a %d %b %y" %></span>
+      <span><%= article.updated_at.strftime "%a %d %b %Y" %></span>
    </li>
    <% end %>
 </ol>
