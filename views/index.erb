@@ -1,40 +1,34 @@
-<div class='index'>
-   <div class='about'>
-      <img src="keith.mcdonnell.jpg"/>
-      
-      <p>
-         I, <em>Keith McDonnell</em>, have been developing software since 1999,
-         specialising in Ruby, Rails and agile project management.
-         Here's my <a href="/keith.mcdonnell.pdf">CV (or resume)</a> and you can 
-         find my <a href="http://github.com/kmcd">open source work on github</a>.
-      </p>
-      
-      <table class='contact'>
-         <caption>If you want to get in touch, here&apos;s my contact details:</caption>
-         
-         <tr>
-            <td>email</td>
-            <td><a href="mailto:<%= email_address %>"><%= email_address %></a></td>
-         </tr>
-         <tr>
-            <td>mobile</td>
-            <td>+353 87 127 3927</td>
-         </tr>
-         <tr>
-            <td>skype</td>
-            <td>keithmmcdonnell</td>
-         </tr>
-      </table>
-   </div>
+<div id='pitch'>
+   <img id='avatar' src="/keith.mcdonnell.jpg"/>
    
-   <p>Here are the articles I've written on &hellip;</p>
-   <dl>
-   <% @articles.group_by {|a| a.tag }.sort_by {|a| a.first }.each do |group| %>
-      <dt><%= group.first %></dt>
-      <% group.last.sort_by {|a| a.title }.each do |article| %>
-      <dd>
-         <a href="<%= article.file_name %>"><%= article.title %></a>
-      </dd>
-      <% end %>
-   <% end %>
+   <h1>
+      <em>Keith McDonnell</em> is a freelance Ruby / Rails developer based in 
+      London, UK.
+   </h1>
+   
+   <p>
+      I&apos;m passionate about Ruby, Ruby on Rails, Test Driven Development, agile 
+      and lean project management.
+   </p>
+   
+   <p>
+      You can find <a href="http://github.com/kmcd">my open source work</a> 
+      on github and here's my <a href="/keith.mcdonnell.pdf">CV 
+      (or resume)</a>.
+   </p>
 </div>
+
+<p id='call2action'>
+   Looking for a Ruby / Rails developer? Email <a href="<%= email_address %>"><%= email_address %></a> or phone 
+   +353 87 127 3927 to find out when we can get started.
+</p>
+
+<ol id='articles'>
+   <li><a href="#">All articles RSS feed</a></li>
+   <% @articles.sort_by {|a| a.updated_at }.each do |article| %>
+   <li>
+      <a href="<%= article.file_name %>"><%= article.title %></a>
+      <span><%= article.updated_at.strftime "%a %d %b %y" %></span>
+   </li>
+   <% end %>
+</ol>

@@ -8,13 +8,13 @@ class Blog < Sinatra::Application
   before { cache_content }
   
   get '/' do
-    @articles = Article.all
-    erb :index
+    @articles, @template = Article.all, :index
+    erb @template
   end
   
   get /^\/(\w+.*)\.html$/ do |title|
-    @article = Article.new title
-    erb :show
+    @article, @template = Article.new(title), :show
+    erb @template
   end
   
   helpers do
