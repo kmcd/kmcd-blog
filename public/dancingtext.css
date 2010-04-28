@@ -1,23 +1,27 @@
 /* Typography */
 body { font: normal normal 10pt/1.6em verdana, sans-serif; }
 h1, h2, h3 { font-weight: normal; }
+
 .index h1 { font-size: 1em; }
 .index h1 em { font-size: 2.4em; font-style: normal; letter-spacing: -2px;}
 .index #articles { list-style-type: none; }
 .index #articles li { margin: 1em 0; }
-.index #articles a { text-decoration: none; font-size: 12pt; }
-.index #articles a:hover { text-decoration: underline; }
+.index #articles a { font-size: 12pt; }
+.index #articles a, .index #call2action a  { text-decoration: none; }
+.index #articles a:hover, .index #call2action a:hover { text-decoration: underline; }
+.index #call2action em { font-style: normal; font-weight: bold; }
 
 /* Color */
-.index #call2action { background-color: rgb(255, 255, 175); }
 .index #avatar { border: thin solid silver; }
 .index #articles span { color: gray; }
+.index #call2action { background-color: rgb(255, 255, 175); }
 
 /* Layout */
 .index { margin: 1.6em 0; min-width: 950px; }
 .index > * { padding: 0 19%; }
 .index h1 { margin: 0; }
 .index img#avatar { padding: 0; float: right; margin-left: 1.6em; }
-.index #call2action { padding: 1em 19%; padding-right: 33%; margin: 2.4em 0; }
+.index #call2action { padding: 0.6em 19%; padding-right: 33%; margin: 2.4em 0; }
+
 .show { margin: 0 auto; width: 61.2%; }
 p.copyright { margin: 4em 0 ; }
