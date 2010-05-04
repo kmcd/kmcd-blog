@@ -1,11 +1,15 @@
+
 == Engine
 
+* Really quick article publishing (jedit)
+* Macro to open up this file quickly (for new ideas)
 * RSS feed
-* Really quick article publishing
 * SEO
 * Promotion ( posterous / link wheel)
 
 == Articles
+
+My take on TDD
 
 Dreyfus model of skill acquisition
 
