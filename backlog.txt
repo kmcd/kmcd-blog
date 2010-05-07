@@ -1,4 +1,3 @@
-
 == Engine
 
 * Really quick article publishing (jedit)
@@ -6,20 +5,18 @@
 * RSS feed
 * SEO
 * Promotion ( posterous / link wheel)
+* Syntax highlighting for code
+* Edit mode for txtl (textile) files
 
 == Articles
 
-My take on TDD
-
 Dreyfus model of skill acquisition
-
 Summarise Dieter Rams design principles (from wikipedia)
-
-Refactoring Ruby (top 5 techniques)
-
-How I do GTD
-
 Clean up / split existing articles
+
+My take on TDD
+Refactoring Ruby (top 5 techniques)
+How I do GTD
 
 Summarise
    * 4 steps to the Epiphany (Blank)
@@ -37,5 +34,4 @@ Re-publish content from:
    * Ruby cook book
    
 Full screen google map with rails (geokit)
-
 Finding people in your area (geokit)

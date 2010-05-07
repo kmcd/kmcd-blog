@@ -1,2 +1,3 @@
-namespace :blog do
+task :article do
+  
 end

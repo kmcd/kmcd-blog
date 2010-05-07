@@ -1,0 +1,56 @@
+---
+title: Dreyfus model of skill acquisition
+tag:   Learning
+date:  May 7 2010
+---
+
+I use the Dreyfus Model of Skill Acquisition for my own learning and on the job teaching and mentoring software developers (mainly Ruby/Rails).
+
+The theory is that people progress through five stages of competence as they learn. The five stages are Novice, Advanced beginner, Competent, Proficient and Expert.
+
+h2. Novices
+
+* don’t want to learn - just want to see something working
+* need clear rules / steps to follow / recipies
+* can't troubleshoot and can get horribly stuck
+
+h2. Advanced beginners
+
+* can complete basic tasks unaided
+* need information fast
+* dont want the big picture
+* will still have difficulty troubleshooting
+
+
+h2. Competent people
+
+* work from conscious, deliberate planning
+* can solve problems on their own
+* seek and use advice from experts
+* can still get stuck on a tricky problem
+
+h2. Proficient practicioners
+
+* need to see the big picture, ie to put their actions into context
+* can reflect on & self-correct their work
+* can learn from the experience of others
+
+h2. Experts
+
+* work from from intuition
+* may have difficulty describing their thought processess
+* know which details to focus on and which to ignore
+* are constantly looking for ways to improve
+
+h2. How to use the Dreyfus model to your advantage
+
+Your level of competence varies per skill. You may be an expert in, say, Ruby but a complete novice in graphic design.
+
+Merely knowing what level you are at each skill helps me immensely. For example, if I'm a novice, I'll seek out and write down the rules I need to follow.
+
+Having an appreciation of what people need at different levels of competence helps me be more patient when teaching & mentoring. Also, it provides a roadmap for learing.
+
+h2. Further reading
+
+* "Wikipedia: Dreyfus model of skill acquisition":http://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition
+* "Pragmatic Thinking and Learning: Refactor Your Wetware":http://pragprog.com/titles/ahptl/pragmatic-thinking-and-learning (chapter 2)
