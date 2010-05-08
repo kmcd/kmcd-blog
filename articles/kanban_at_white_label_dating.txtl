@@ -50,7 +50,7 @@ Story points are estimates of a stories complexity or size. We used a scale of 1
 
 To calculate the team velocity, I simply totalled the story points for all of the stories complete that week. I then updated our burndown graph.
 
-h2. Conslusion
+h2. Conclusion
 
 Kanban is easily my favourite software development process, lightweight and powerful. Needless to say we used a grab bag of tools from XP and Scrum, such as:
 * Code reviews

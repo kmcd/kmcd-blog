@@ -11,10 +11,16 @@ h1, h2, h3 { font-weight: normal; }
 .index #articles a:hover, .index #call2action a:hover { text-decoration: underline; }
 .index #call2action em { font-style: normal; font-weight: bold; }
 
+.show .author { font-style: italic; }
+
 /* Color */
 .index #avatar { border: thin solid silver; }
 .index #articles span { color: gray; }
 .index #call2action { background-color: rgb(255, 255, 175); }
+
+.show h2, .show h3 { color: gray; }
+.show .author { color: gray; }
+.show .comments, .show .copyright { color: gray; }
 
 /* Layout */
 .index { margin: 1.6em 0; min-width: 950px; }
@@ -24,4 +30,7 @@ h1, h2, h3 { font-weight: normal; }
 .index #call2action { padding: 0.6em 19%; padding-right: 33%; margin: 2.4em 0; }
 
 .show { margin: 0 auto; width: 61.2%; }
+.show .content { margin-top: 2.4em; }
+.show .comments {  margin-top: 2.4em; }
 p.copyright { margin: 4em 0 ; }
+
