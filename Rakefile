@@ -1,4 +1,4 @@
-desc 'Publish article'
+desc 'Publish article to blog'
 task :publish do
   %x{ 
     cd /home/kmcd/src/blog &&
