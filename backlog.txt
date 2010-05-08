@@ -1,16 +1,12 @@
 == Engine
 
 * Really quick article publishing (jedit)
-* Macro to open up this file quickly (for new ideas)
 * RSS feed
-* SEO
-* Promotion ( posterous / link wheel)
 * Syntax highlighting for code
 * Edit mode for txtl (textile) files
 
 == Articles
 
-Dreyfus model of skill acquisition
 Summarise Dieter Rams design principles (from wikipedia)
 Clean up / split existing articles
 
