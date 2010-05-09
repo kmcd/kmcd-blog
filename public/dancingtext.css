@@ -12,6 +12,7 @@ h1, h2, h3 { font-weight: normal; }
 .index #call2action em { font-style: normal; font-weight: bold; }
 
 .show .author { font-style: italic; }
+.show h2 { margin-top: 1.6em; }
 
 /* Color */
 .index { color: gray; }
