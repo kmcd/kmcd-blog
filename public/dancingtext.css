@@ -14,9 +14,10 @@ h1, h2, h3 { font-weight: normal; }
 .show .author { font-style: italic; }
 
 /* Color */
+.index { color: gray; }
+.index #call2action, .index h1 em { color: black; }
 .index #avatar { border: thin solid silver; }
 .index #articles span { color: gray; }
-.index #call2action { background-color: rgb(255, 255, 175); }
 
 .show h2, .show h3 { color: gray; }
 .show .author { color: gray; }
