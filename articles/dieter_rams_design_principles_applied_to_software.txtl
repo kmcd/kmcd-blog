@@ -27,36 +27,27 @@ All very Zen, but how can we put this to good use in the software world ?
 
 h2. Applied to user interface
 
-A *useful* user interface clearly presents the information without requiring interaction. Read "Magic Ink: Information Software and the Graphical Interface":http://worrydream.com/MagicInk by Bret Victor for more on the perils of interactivity.
+A *useful* user interface clearly presents the information without requiring interaction. In the UI context *useful* and *understandable* are synonymous. Read "Magic Ink: Information Software and the Graphical Interface":http://worrydream.com/MagicInk by Bret Victor for more on the perils of interactivity. You can find out if your UI is useful by doing usability testing.
 
 Dont rely on fashions or fads. Instead, try and understand the principles of graphic design such as layout, color, typography. If you use as *little design as possible* your interface should be *long lasting* in that it will never look out of date.
 
-An *unobtrusive* design is free from unnecessary ornamentation. What Tufte would refer to as "administrative debris":
+An *unobtrusive* design is free from unnecessary ornamentation. What Tufte would refer to as "administrative debris" :
 
-  "The idea is that the content is the interface, the information is the interface not computer administrative debris."
+bq. "The idea is that the content is the interface, the information is the interface not computer administrative debris."
 
-You can really be ruthless in pruning here. See how Ryan Tomayko 
+You can really be ruthless in pruning here. See how "Ryan Tomayko improved his website based on Tufte principles":http://tomayko.com/writings/administrative-debris .
 
-thorough down to the last detail
-
-aesthetic (has beauty)
-  symetry
-  not amazon or craigslist. Apple or Google.
+I would agrees that *aesthetic* or beauty is important to good desgin. Despite the current trend for A/B tested hyper optimised pages. For one thing, it gives you pride in your work. 
 
 h2. Applied to software (code) design
 
-a useful product
+The first crtieria of well designed code is that it is actually *useful*. Trite though it may sound, it must do what it's supposed to do without bugs. 
 
-long-lasting
+Your code should be *understandable* by end users and developers. For end users, speak and understand THEIR language. Use as little jargon as possible. For developers, your code should read as close to pseudo-code as possbile.
 
-unobtrusive
+As *little design as possible*. Amen to that. Don't try and over-engineer your application and beware gold plating. Use design patterns and complex algorithms to solve a problem, not improve a solution.
 
-as little design as possible
-
-an understandable product
-
-thorough down to the last detail (not applicable)
-
+How can you make your code *long-lasting*? By making it (a) easy to change and (b) resilient to failure. For example, (a) one of your vendors has gone bust and you have to replace a key piece of your architecture. You should have a layer of abstraction where you can plug in the new vendors code in ONE PLACE. Similarly, your new vedor is flaky but solvent. You can mitigate this by (b) handling outages gracefully and storing missed calls in a queue and try again later.
 
 Further reading
 
