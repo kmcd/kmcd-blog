@@ -1,0 +1,65 @@
+---
+title: Dieter Rams design principles applied to software
+tag:   software
+date:  May 8 2010
+---
+
+I went to a "retrospective of Dieter Rams design work at the London Design meseum":http://designmuseum.org/design/dieter-rams during the summer. He's the master of the simple, elegant and functional aesthetic. I could really see where Jonathan Ive gets his inspiration.
+
+!http://gizmodo.com/assets/resources/2008/01/rams-ive.jpg!
+
+Quite helpfully, he came up with 10 design principles:
+
+h2. Good design is ...
+
+* innovative
+* a useful product
+* aesthetic (has beauty)
+* an understandable product
+* unobtrusive
+* honest
+* long-lasting
+* thorough down to the last detail
+* environmentally friendly
+* as little design as possible
+
+All very Zen, but how can we put this to good use in the software world ?
+
+h2. Applied to user interface
+
+A *useful* user interface clearly presents the information without requiring interaction. Read "Magic Ink: Information Software and the Graphical Interface":http://worrydream.com/MagicInk by Bret Victor for more on the perils of interactivity.
+
+Dont rely on fashions or fads. Instead, try and understand the principles of graphic design such as layout, color, typography. If you use as *little design as possible* your interface should be *long lasting* in that it will never look out of date.
+
+An *unobtrusive* design is free from unnecessary ornamentation. What Tufte would refer to as "administrative debris":
+
+  "The idea is that the content is the interface, the information is the interface not computer administrative debris."
+
+You can really be ruthless in pruning here. See how Ryan Tomayko 
+
+thorough down to the last detail
+
+aesthetic (has beauty)
+  symetry
+  not amazon or craigslist. Apple or Google.
+
+h2. Applied to software (code) design
+
+a useful product
+
+long-lasting
+
+unobtrusive
+
+as little design as possible
+
+an understandable product
+
+thorough down to the last detail (not applicable)
+
+
+Further reading
+
+* If you haven't already, you should  "Magic Ink: Information Software and the Graphical Interface":http://worrydream.com/MagicInk/ by Bret Victor. It'll change the way you think about interface design for ever.
+* "Dieter Rams on Wikipedia":http://en.wikipedia.org/wiki/Dieter_Rams
+* "Nice explination of his 10 principles":http://www.vitsoe.com/en/gb/about/dieterrams/gooddesign

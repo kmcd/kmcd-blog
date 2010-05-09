@@ -7,7 +7,6 @@
 
 == Articles
 
-Summarise Dieter Rams design principles (from wikipedia)
 Clean up / split existing articles
 
 My take on TDD
