@@ -13,6 +13,7 @@ h1, h2, h3 { font-weight: normal; }
 
 .show .author { font-style: italic; }
 .show h2 { margin-top: 1.6em; }
+.show p.copyright { margin-top: 0; }
 
 /* Color */
 .index { color: gray; }
