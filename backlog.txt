@@ -1,6 +1,5 @@
 == Engine
 
-* Really quick article publishing (jedit)
 * RSS feed
 * Syntax highlighting for code
 * Edit mode for txtl (textile) files
@@ -10,8 +9,19 @@
 Clean up / split existing articles
 
 My take on TDD
+   - not just unit testing: biz, usability, cash flow, performance, cust dev
+   - context is key
+   - only test what is likely to break
+   - dont test everything
+   - make sure you test whats important (in context of current project)
+   - examples ( trading script, payroll, consumer app, startup, ... )
+   
 Refactoring Ruby (top 5 techniques)
 How I do GTD
+How I use ThunderBird & Inbox 0
+My Rails development environment
+My jedit setup (github)
+Soduku solver
 
 Summarise
    * 4 steps to the Epiphany (Blank)
@@ -27,6 +37,7 @@ Work through examples of:
 Re-publish content from:
    * Ruby best practices
    * Ruby cook book
+   * Refactoring Ruby
    
 Full screen google map with rails (geokit)
 Finding people in your area (geokit)
