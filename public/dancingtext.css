@@ -1,3 +1,17 @@
+/* Layout */
+.index { margin: 1.6em 0; min-width: 950px; }
+.index > * { padding: 0 19%; }
+.index h1 { margin: 0; }
+.index img#avatar { padding: 0; float: right; margin-left: 1.6em; }
+.index #call2action { padding: 0.6em 19%; padding-right: 33%; margin: 2.4em 0; }
+.index #articles { margin-top: 2.4em; }
+.index #articles li { margin: 1em 0; }
+
+.show { margin: 0 auto; width: 61.2%; }
+.show .content { margin-top: 2.4em; }
+.show .comments {  margin-top: 2.4em; }
+p.copyright { margin: 4em 0 ; }
+
 /* Typography */
 body { font: normal normal 10pt/1.6em verdana, sans-serif; }
 h1, h2, h3 { font-weight: normal; }
@@ -5,7 +19,6 @@ h1, h2, h3 { font-weight: normal; }
 .index h1 { font-size: 1em; }
 .index h1 em { font-size: 2.4em; font-style: normal; letter-spacing: -2px;}
 .index #articles { list-style-type: none; }
-.index #articles li { margin: 1em 0; }
 .index #articles a { font-size: 12pt; }
 .index #articles a, .index #call2action a  { text-decoration: none; }
 .index #articles a:hover, .index #call2action a:hover { text-decoration: underline; }
@@ -25,16 +38,3 @@ h1, h2, h3 { font-weight: normal; }
 .show h2, .show h3 { color: gray; }
 .show .author { color: gray; }
 .show .comments, .show .copyright { color: gray; }
-
-/* Layout */
-.index { margin: 1.6em 0; min-width: 950px; }
-.index > * { padding: 0 19%; }
-.index h1 { margin: 0; }
-.index img#avatar { padding: 0; float: right; margin-left: 1.6em; }
-.index #call2action { padding: 0.6em 19%; padding-right: 33%; margin: 2.4em 0; }
-
-.show { margin: 0 auto; width: 61.2%; }
-.show .content { margin-top: 2.4em; }
-.show .comments {  margin-top: 2.4em; }
-p.copyright { margin: 4em 0 ; }
-

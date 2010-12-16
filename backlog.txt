@@ -1,43 +1,51 @@
-== Engine
+= WIP
 
-* RSS feed
-* Syntax highlighting for code
-* Edit mode for txtl (textile) files
-
-== Articles
-
-Clean up / split existing articles
-
-My take on TDD
-   - not just unit testing: biz, usability, cash flow, performance, cust dev
-   - context is key
-   - only test what is likely to break
-   - dont test everything
-   - make sure you test whats important (in context of current project)
-   - examples ( trading script, payroll, consumer app, startup, ... )
+= Backlog
+   What is Kanban/Lean?
    
-Refactoring Ruby (top 5 techniques)
-How I do GTD
-How I use ThunderBird & Inbox 0
-My Rails development environment
-My jedit setup (github)
-Soduku solver
+   How I use ThunderBird email
+   - Inbox 0, unread only
+   - batch times: twice a day
+   - reply / delete / tag
+   - tags (todo)
+   - archive
+   - gtd scan the input queue once
+   - screen shots (inbox / tags)
+   - quick text
 
-Summarise
-   * 4 steps to the Epiphany (Blank)
-   * Implementing Lean software development
-   * Don't make me think
-   
+= Blog app
+   * RSS feed
+   * Improve typography
+   * Syntax highlighting for code
+   * Edit mode for txtl (textile) files
+   * multi-publish to RSS agregators, posterous auto-post
+
+Bash-fu
+- bash_profile
+- CTL + R
+- history
+- tab completion
+- job control
+- from peep code
+
+My jEdit setup (github)
+- precursor to jedit cast
+- plugins
+- shortcuts
+- super abbvrevs
+
+My Ruby/Rails development environment
+Soduku solver (ruby, Norvig)
 Flight search engine prototype
-
-Work through examples of:
-   * Collective Intelligence
-   * HTML & CSS design patterns
-   
-Re-publish content from:
-   * Ruby best practices
-   * Ruby cook book
-   * Refactoring Ruby
-   
 Full screen google map with rails (geokit)
-Finding people in your area (geokit)
+Predictive text
+Bloom filter spell checker
+Refactoring Ruby (top 5 techniques)
+ActiveRecord tableless model macro 
+Rails wizard 
+ubuntu keyboard shortcuts
+automatic document/article summariser algorithms 
+include ActionController::UrlWriter to generate app routes 
+turn off google preview
+rubyists opml feed 
+Summarise Bret Victors worry dream

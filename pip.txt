@@ -1,0 +1,18 @@
+= WIP (1)
+   SQ3R > Continuous delivery
+   
+= Backlog (10)
+   Kanban notes
+   Work through > Beautiful Data ch 17. (R)
+   SQ3R > Pro HTML & CSS
+   Work through > Prag prog exercies/qs.
+   Work through > Beautiful Data (Norvig)
+   Work through > Refactoring examples
+   SQ3R > debug it
+   
+= Done
+   Work through > top 10 Asciicasts
+   SQ3R > Working effectively with legacy code
+   SQ3R > Productive Programmer (& exercises)
+   SQ3R > start small stay small
+   
