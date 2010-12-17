@@ -14,15 +14,14 @@ p.copyright { margin: 4em 0 ; }
 
 /* Typography */
 body { font: normal normal 10pt/1.6em verdana, sans-serif; }
-h1, h2, h3 { font-weight: normal; }
 
-.index h1 { font-size: 1em; }
+.index h1 { font-size: 1em; font-weight: normal; }
 .index h1 em { font-size: 2.4em; font-style: normal; letter-spacing: -2px;}
 .index #articles { list-style-type: none; }
 .index #articles a { font-size: 12pt; }
 .index #articles a, .index #call2action a  { text-decoration: none; }
 .index #articles a:hover, .index #call2action a:hover { text-decoration: underline; }
-.index #call2action em { font-style: normal; font-weight: bold; }
+.index #articles li span { font-style: italic; }
 
 .show .author { font-style: italic; }
 .show h2 { margin-top: 1.6em; }
@@ -33,8 +32,7 @@ h1, h2, h3 { font-weight: normal; }
 .index #call2action, .index h1 em { color: black; }
 .index #call2action { background-color: rgb(255, 255, 175); }
 .index #avatar { border: thin solid silver; }
-.index #articles span { color: gray; }
+.index #articles span { color: silver; }
 
-.show h2, .show h3 { color: gray; }
 .show .author { color: gray; }
 .show .comments, .show .copyright { color: gray; }
