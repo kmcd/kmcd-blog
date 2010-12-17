@@ -23,6 +23,10 @@ class Article
     info['title']
   end
   
+  def link
+    "http://www.keithmcdonnell.net/#{@file_name.sub(/articles\//, '')}".sub /txtl/, 'html'
+  end
+  
   def updated_at
     return Date.today unless info['date']
     Date.parse(info['date'].to_s)

@@ -12,6 +12,12 @@ class Blog < Sinatra::Application
     erb @template
   end
   
+  get '/keith_mcdonnell.rss' do
+    # TODO: xml content type
+    @articles, @template = Article.all, :rss_feed
+    builder @template
+  end
+  
   get /^\/(\w+.*)\.html$/ do |title|
     @article, @template = Article.new(title), :show
     erb @template

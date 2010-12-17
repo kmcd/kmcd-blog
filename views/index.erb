@@ -18,7 +18,7 @@
 </div>
 
 <ol id='articles'>
-   <li><a href="#">All articles RSS feed</a></li>
+   <li><a href="/keith_mcdonnell.rss">All articles RSS feed</a></li>
    <% @articles.sort_by {|a| a.updated_at }.reverse.each do |article| %>
    <li>
       <a href="<%= article.file_name %>"><%= article.title %></a>
