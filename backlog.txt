@@ -1,9 +1,12 @@
 = WIP
-
-= Backlog
-   What is Kanban/Lean?
+What is Kanban/Lean?
+   - SQ3R > Kanban (Anderson)
    
-   How I use ThunderBird email
+= Backlog
+
+SQ3R > Continuous delivery
+
+How I use ThunderBird email
    - Inbox 0, unread only
    - batch times: twice a day
    - reply / delete / tag
@@ -13,39 +16,33 @@
    - screen shots (inbox / tags)
    - quick text
 
-= Blog app
-   * RSS feed
-   * Improve typography
-   * Syntax highlighting for code
-   * Edit mode for txtl (textile) files
-   * multi-publish to RSS agregators, posterous auto-post
-
 Bash-fu
-- bash_profile
-- CTL + R
-- history
-- tab completion
-- job control
-- from peep code
-
-My jEdit setup (github)
-- precursor to jedit cast
-- plugins
-- shortcuts
-- super abbvrevs
+   - bash_profile
+   - CTL + R
+   - history
+   - tab completion
+   - job control
+   - from peep code
+   
+Productivity hacks
+   - ~/bin shorcuts
+   - from productive programmer
 
 My Ruby/Rails development environment
 Soduku solver (ruby, Norvig)
-Flight search engine prototype
-Full screen google map with rails (geokit)
-Predictive text
-Bloom filter spell checker
-Refactoring Ruby (top 5 techniques)
-ActiveRecord tableless model macro 
-Rails wizard 
-ubuntu keyboard shortcuts
-automatic document/article summariser algorithms 
+ActiveRecord tableless model macro
 include ActionController::UrlWriter to generate app routes 
 turn off google preview
-rubyists opml feed 
-Summarise Bret Victors worry dream
+def;end.private
+getting up to speed on a legacy rails app
+test & refactor (composed method) flowercard delivery_method
+jedit macro for extract method refactoring in ruby
+jedit delete line based on regex/literal ala sed
+undo removing all o's from start small stay small notes
+connection.execute is not chainable with named scopes
+RSS feed of rubyists
+How to improve as a developer
+Articles for all SQ3R notes
+Debug it notes
+dev: Jamis Buck
+dev: Jay Fields

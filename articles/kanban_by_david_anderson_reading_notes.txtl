@@ -1,0 +1,181 @@
+---
+title: Kanban by David Anderson reading notes
+tag:   draft
+date:  Jan 17 2011
+---
+
+h3. "Kanban by David Anderson is available to purchase on his website":http:// 
+
+h2. What is a Kanban method?
+
+Kanban means signal card in Japansese. It represents a unit of capacity in a system. It can also be a signalling mechanism, eg plane ticket (providing direction/instruction). A kanban system can be used to:
+* limit a team’s work-in-progress
+* set capacity
+* balance the demand against the throughput of delivered work. 
+* enforce a sustainable pace of development
+* ensure work versus personal life balance.
+
+h2. Recipe for success from Goldratt's Theory of contraints
+
+# Visualize Workflow
+# Limit Work-in-Progress
+# Measure and Manage Flow
+# Make Process Policies Explicit
+# Use Models to Recognize Improvement Opportunities
+
+Excessive defects are the biggest waste in software development. Therefore focus on quality to reduce waste. Quality improvement techniques include:
+
+* pair programming / TDD / refactoring
+* Code inspection (every day for 30 mins)
+* Collaborative team analysis and design modeling sessions (Scott Ambler, Agile modelling)
+* Code metrics tools
+* Automated acceptance testing
+* Server monitoring
+* Automation
+
+Reduce Work-in-Progress and Deliver Often Frequent Releases Build Trust.
+
+h2. Balance Demand against Throughput
+
+* set the rate at which we accept new requirements into our software development 
+* pipe to correspond with the rate at which we can deliver working code
+* You need slack to enable continuous improvement. In order to have slack, you 
+* must have an unbalanced value stream with a bottleneck resource. Optimizing 
+* for utilization is not desirable. (Queing theory, road traffic)
+
+ 
+h2. Starting a Kanban change initiative
+
+# Agree on a set of goals for introducing Kanban.
+# Map the value stream 
+# Define some point where you want to control input.
+# Define some exit point beyond which you do not intend to control.
+# Define a set of work item types based on the types of work requests 
+# Analyze the demand for each work item type. 
+# Meet with the upstream and downstream stakeholders to agree to WIP limit, regular prioritization meeting, regular fixed date release and a lead-time target for each class of service of work item.
+# Create a board/card wall to track the value stream you are controlling
+# Optionally, create an electronic system to track and report the same
+# Agree with the team to have a standup meeting every day in front of the board;
+# Educate the team on the new board, WIP limits, and the pull system.
+    Their process hasn’t changed, other than your asking them to accept a WIP limit and to pull work based on class-of-service policy rather than
+    receiving it in a push fashion.
+
+h2.  Coordination
+
+Daily Standup Meetings
+* focus on flow of work (rather than Scrum's 3 questions)
+* in particular try to reslove impediments
+* Triage work; assessing and classifying into categories for priority of attention
+
+Reviewing & resolving impediments issues is vital to improving flow through the system. 
+
+h3. Synchronizing across Geographic Locations
+* electronic system
+* keep physical card walls synchronized, at the very least, on a daily basis.
+
+When the telecommuter completed an item and changed its electronic status, they
+would contact their sticky buddy by instant message, email, or phone and ask them to update the physical board.
+
+h3. Release planning
+
+* Which items in the system are (or will be) ready for release?
+* What is required to actually release each item to production?
+* What testing will be required post-release to validate the integrity of production systems?
+* What risks are involved?
+* How are these risks being mitigated?
+* What contingency plans are required?
+* Who needs to be involved in the release and present during the push to production (or other delivery mechanism)?
+* How long will the release take?
+* What other logistics will be involved?
+
+h2. Establishing Service Level Agreements
+
+Customers who pay more or who spend money with the airline on a regular
+basis enjoy a better class of service.
+
+Classes of service provide us a convenient way of classifying work to provide acceptable levels of customer satisfaction at an economically optimal cost. By quickly identifying the class of service for an item, we are spared the need to make a detailed estimate or analysis.
+
+h3. Classes of service or work item types
+
+* High severity, high priority defects are fixed immediately. They receive a different, higher, class of service than other work. To fix a high-severity production defect, we put other work aside, pull in as many people as we require.
+
+* The Expedite (or “Silver Bullet”) 
+AKA ASAP. Manufacturing companies often create policy to limit the number of expedite requests that hit a factory.
+
+* Fixed date
+* Standard
+* Intangaible (eg devliverable dates far in the future, refactoring)
+
+Offering a target lead time coupled with a due-date performance metric is an alternative to treating each item individually and having to estimate and commit to a delivery date for each item.
+
+The service-level agreement allows us to avoid costly activities, such as
+estimation; low-trust activities, such as making commitments; and to spread risk by aggregating a large collection of requests and promising only aggregate performance in the form of a percentage due-date performance.
+
+It is important to communicate that the target lead time in the Standard class of service is just that, a target!
+
+The Expedite and Fixed Delivery Date classes of service were ensuring that important items were always on time. 
+
+Due Date Performance (percentage) should be monitored for target lead times.
+
+If classes of service are used properly and combined with a regular delivery cadence, very few complaints are likely to be received, even if a significant portion of items miss their target lead time.
+
+
+h2. Metrics
+
+Measure
+* WIP (cumulative flow, or use board)
+*  Lead time against each class of service
+* Due Date Performance for fixed date items
+* Throughput
+- number of items delivered in a given time period, such as one month.
+- should increase as time goes by
+- indicator of how well the system is performing, demonstrate continuous improvement. 
+* Issues and Blocked Work Items
+cumulative-flow diagram of reported impediments overlaid with a graph of the number of work-in-progress items that have become blocked,
+
+Initial Quality
+* number of escaped defects as a percentage against the total WIP and throughput
+* bugs per feature
+
+Failure Load, how many work items:
+* we process because of earlier poor quality—
+* are production defects / new features to overcome to mitigate existing shortcoming 
+* causes inclucde poor usability or a failure to anticipate user needs properly.
+* shows capacity left on the table that could be used for new, value-added features.
+
+h2. Operations review
+
+Objective, data-driven retrospective on the organization’s performance. Sets an expectation of objective, data-driven, quantitative management
+
+Should be performed monthly at a time boxed meeting.
+
+You will need to allow time to prepare data. Ideally this data would be generated automatically.
+
+h2. Economic model
+
+Waste can be classified into three main abstract categories: transaction
+costs, coordination costs, and failure load.
+
+To determine if an activity is truly wasteful ask, “Would we do more of
+this if we could?” If the answer is no, then the activity is some form of
+waste.
+
+Transaction costs come in two types: setup activities and cleanup, or delivery activities.
+
+Coordination costs are activities that are performed in order to assign
+people to tasks, schedule events, or coordinate the work of two or more
+people toward a common outcome.
+
+h3. Failure load
+
+* is new value-added work that is generated because of some
+earlier failing, such as a defect in the software, or a poor design or imple-
+mentation that led to lack of customer adoption, a failure to realize a
+target payoff function, or a significant rise in help desk calls or service
+requests.
+* uses capacity that could be used for new, innovative, additional customer-valued, and revenue-generating features.
+* demand generated by the customer that might have been avoided through higher quality delivered earlier.
+* eg help desk calls
+* adds value that should have been there already
+
+h3. "Kanban by David Anderson is available to purchase on his website.":http:// 
