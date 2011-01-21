@@ -4,7 +4,7 @@ tag:   draft
 date:  Jan 17 2011
 ---
 
-h3. "Kanban by David Anderson is available to purchase on his website":http://agilemanagement.net/index.php/site/kanbanbook/
+h2. "Kanban by David Anderson is available to purchase on his website":http://agilemanagement.net/index.php/site/kanbanbook/
 
 h2. What is a Kanban method?
 
@@ -69,14 +69,14 @@ Daily Standup Meetings
 
 Reviewing & resolving impediments issues is vital to improving flow through the system. 
 
-h3. Synchronizing across Geographic Locations
+h2. Synchronizing across Geographic Locations
 * electronic system
 * keep physical card walls synchronized, at the very least, on a daily basis.
 
 When the telecommuter completed an item and changed its electronic status, they
 would contact their sticky buddy by instant message, email, or phone and ask them to update the physical board.
 
-h3. Release planning
+h2. Release planning
 
 * Which items in the system are (or will be) ready for release?
 * What is required to actually release each item to production?
@@ -95,7 +95,7 @@ basis enjoy a better class of service.
 
 Classes of service provide us a convenient way of classifying work to provide acceptable levels of customer satisfaction at an economically optimal cost. By quickly identifying the class of service for an item, we are spared the need to make a detailed estimate or analysis.
 
-h3. Classes of service or work item types
+h2. Classes of service or work item types
 
 * High severity, high priority defects are fixed immediately. They receive a different, higher, class of service than other work. To fix a high-severity production defect, we put other work aside, pull in as many people as we require.
 
@@ -161,7 +161,7 @@ Transaction costs come in two types: setup activities and cleanup, or delivery a
 
 Coordination costs are activities that are performed in order to assign people to tasks, schedule events, or coordinate the work of two or more people toward a common outcome.
 
-h3. Failure load
+h2. Failure load
 
 * is new value-added work that is generated because of some earlier failing, such as a defect in the software, or a poor design or implementation that led to lack of customer adoption, a failure to realize a target payoff function, or a significant rise in help desk calls or service requests.
 * uses capacity that could be used for new, innovative, additional customer-valued, and revenue-generating features.
@@ -169,4 +169,4 @@ h3. Failure load
 * eg help desk calls
 * adds value that should have been there already
 
-h3. "Kanban by David Anderson is available to purchase on his website.":http://agilemanagement.net/index.php/site/kanbanbook/
+h2. "Kanban by David Anderson is available to purchase on his website.":http://agilemanagement.net/index.php/site/kanbanbook/

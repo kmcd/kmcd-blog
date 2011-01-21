@@ -1,0 +1,72 @@
+---
+title: Easily declare private methods in Ruby
+tag:   draft
+date:  Jan 20 2011
+---
+
+h3. Work in progress! Havn't figured out how to find the method which is *calling* the current method
+
+When you have a large class file, private method definitions can often be too far away from their calling methods. You can end up ping ponging back and forward between calling and helper methods.
+
+In a larger class file, I like to group co-operating methods together. Any called private methods are close to the methods where they are called. This can get ugly when using the "composed method":http://books.google.com/books?id=oVadw8Jf0cYC&pg=PA156&lpg=PA156&dq=composed+method+ruby+refactor&source=bl&ots=fbOkzTZlOw&sig=1yV5m8MCqWXXto_gR0u7Ud4AwnU&hl=en&ei=XsE5TcfIFsev8QPtnL2kCA&sa=X&oi=book_result&ct=result&resnum=1&ved=0CBIQ6AEwAA#v=onepage&q=composed%20method%20ruby%20refactor&f=false style.
+
+<pre>
+def foo
+  bar
+  baz
+end
+
+def bar
+end
+
+private :bar
+
+def baz
+end
+
+private :baz
+</pre>
+
+Why not just use the private method above the method declarations? You must re-declare subsequent public methods to be so, which can get messy.
+
+<pre>
+def foo
+  bar
+end
+
+private
+
+def bar
+end
+
+public 
+
+def baz
+end
+</pre>
+
+Duplication easily removed with a class level macro (just dont say magic metaprogramming).
+
+To that end I've created a gem: *ruby-private*. Here it is in action.
+
+<pre>
+$ gem install ruby-private
+
+$ irb -rrubygems
+
+require 'ruby-private'
+
+class Foo
+  def bar
+  end.private!
+end
+
+Foo.private_methods
+=> ["bar"]
+</pre>
+
+Sweet, tasty sugar. 
+
+h3. Work in progress! Havn't figured out how to find the method which is *calling* the current method
+
+<code>ruby-private</code> is "available on ruby gems":http://. You can check out the "ruby-private source on github":http:// .

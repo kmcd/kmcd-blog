@@ -10,6 +10,8 @@
 .show { margin: 0 auto; width: 61.2%; }
 .show .content { margin-top: 2.4em; }
 .show .comments {  margin-top: 2.4em; }
+.show pre { padding-left: 1.6em; }
+
 p.copyright { margin: 4em 0 ; }
 
 /* Typography */
@@ -24,8 +26,11 @@ body { font: normal normal 10pt/1.6em verdana, sans-serif; }
 .index #articles li span { font-style: italic; }
 
 .show .author { font-style: italic; }
+.show h1, .show h2 { font-weight: normal; }
+.show h1 { line-height: 1.18em; }
 .show h2 { margin-top: 1.6em; }
 .show p.copyright { margin-top: 0; }
+.show img { width: 100%; }
 
 /* Color */
 .index { color: gray; }
@@ -36,3 +41,7 @@ body { font: normal normal 10pt/1.6em verdana, sans-serif; }
 
 .show .author { color: gray; }
 .show .comments, .show .copyright { color: gray; }
+.show pre { border-left: thin dotted silver; }
+
+pre, code { color: navy; }
+

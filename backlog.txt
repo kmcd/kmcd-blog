@@ -1,21 +1,21 @@
 = WIP
-What is Kanban/Lean?
-   - SQ3R > Kanban (Anderson)
-   
-= Backlog
 
-SQ3R > Continuous delivery
+Easily declare private methods
+My Ruby/Rails development environment (dox, jedit, term, firefox, web dev, firebug)
+Code walk through from Rails/Ascii casts
 
-How I use ThunderBird email
-   - Inbox 0, unread only
-   - batch times: twice a day
-   - reply / delete / tag
-   - tags (todo)
-   - archive
-   - gtd scan the input queue once
-   - screen shots (inbox / tags)
-   - quick text
+= Next
 
+include ActionController::UrlWriter to generate app routes
+Code reading articles from RubyFlow
+ActiveRecord tableless model macro
+
+= Writing about code
+
+productive_programmer_notes.txt
+Productivity hacks
+   - ~/bin shorcuts
+   - from productive programmer
 Bash-fu
    - bash_profile
    - CTL + R
@@ -23,26 +23,39 @@ Bash-fu
    - tab completion
    - job control
    - from peep code
-   
-Productivity hacks
-   - ~/bin shorcuts
-   - from productive programmer
-
-My Ruby/Rails development environment
-Soduku solver (ruby, Norvig)
-ActiveRecord tableless model macro
-include ActionController::UrlWriter to generate app routes 
-turn off google preview
-def;end.private
-getting up to speed on a legacy rails app
+debug_it_notes.txt
 test & refactor (composed method) flowercard delivery_method
-jedit macro for extract method refactoring in ruby
-jedit delete line based on regex/literal ala sed
-undo removing all o's from start small stay small notes
+notes from ruby refactoring
 connection.execute is not chainable with named scopes
-RSS feed of rubyists
-How to improve as a developer
-Articles for all SQ3R notes
-Debug it notes
-dev: Jamis Buck
-dev: Jay Fields
+feedburner
+fresh rvm mysql ror ubuntu install (history from dev machine)
+
+
+= Code reading
+
+Read a library from Ruby standard library
+Find missing tests in Ruby standard library
+Find missing tests in Rails
+Find a gem to read (defunkt)
+How does the Rails router work?
+
+
+= Code writing
+
+Rails unit test generator
+jedit macro for extract method refactoring in ruby
+exercises from ruby refactoring
+write rdoc & refactor texas holdem gem
+Soduku solver (ruby, Norvig)
+undo removing all o's from start small stay small notes
+delayed job deserialize bugfix and test
+big tuna subversion handler and tests
+mining github for rubyists (see hackdiary)
+publish to hacker news, ruby flow rake task
+Write missing tests in Ruby standard library
+Run Rails 2.8-stable test suite
+Find a bug to fix in Rails
+apt package for rvm, ror
+initialize ruby instance variables from constructor
+attention/concentration test (backwards countdown)
+show full article in feed

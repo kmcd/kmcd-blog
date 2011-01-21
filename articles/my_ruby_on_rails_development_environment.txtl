@@ -1,0 +1,64 @@
+---
+title: My Ruby on Rails development environment
+tag:   draft
+date:  Jan 20 2011
+---
+
+Here's my Ruby / Rails development environment. I use jedit, firefox and gnome-terminal. My operating system of choice is Ubuntu (the rich mans OS X).
+
+[screen shot]
+
+What you won't see are: email, IM. I switch to a different work space to launch thunderbird or pidgin when I need to communicate. More importantly, I close communication apps when I'm finished communicating.
+
+h2. Documentation
+
+Searchable rails api
+Rails guides
+asciicasts
+Download onto your local machine
+gnome-search to find pdfs
+
+h2. Text editor
+
+May need screen shot demonstating features. Perhaps a screencast ?
+
+jedit
+- file opening
+- ruby highlighting
+- font
+- abbrevs
+
+plugins
+- candy folds
+- FTP
+- Find file
+- Sessions
+- Abbrevs
+
+h2. Shell
+
+gnome-terminal
+
+alias 7ci='svn ci -m '
+alias 7st='svn st --ignore-externals | egrep "(M|A|D|\?)" '
+alias dm='rake db:migrate'
+alias g='git '
+alias j='~/bin/jedit -reuseview '
+alias tst='ruby -Ilib:test '
+
+h2. Web browser
+
+firefox
+
+tabs:
+bug tracker
+localhost
+open other tabs as need then closed whwn finished
+
+firebug (F12)
+
+web developer
+
+h2. Cross browser testing
+
+Virtual box, XP ie 6

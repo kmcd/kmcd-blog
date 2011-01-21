@@ -1,0 +1,52 @@
+---
+title: Continuous Delivery reading notes
+tag:   draft
+date:  Jan 18 2011
+---
+
+From "Continuous Delivery":http://continuousdelivery.com by Farley & Humble. You can check out the book and articles on their web site.
+
+h2. Release anti-patterns
+
+Antipattern: Deploying Software Manually
+
+* The production of extensive, detailed documentation that describes the steps to be taken and the ways in which the steps may go wrong
+* Reliance on manual testing to confirm that the application is running correctly
+* Frequent calls to the development team to explain why a deployment is going wrong on a release day
+* Frequent corrections to the release process during the course of a release
+* Environments in a cluster that differ in their configuration
+* Releases that take more than a few minutes to perform
+* Releases that are unpredictable in their outcome, that often have to be rolled back or run into unforeseen problems
+
+Antipattern: Deploying to a Production-like Environment Only after Development Is Complete
+
+Antipattern: Manual Configuration Management of Production Environments
+
+Feedback is essential to frequent, automated releases. There are three criteria
+for feedback to be useful.
+
+* Any change, of whatever kind, needs to trigger the feedback process.
+* The feedback must be delivered as soon as possible.
+* The delivery team must receive feedback and then act on it.
+
+Typical tests
+* The software’s unit tests must pass.
+* test coverage and other technology-specific metrics.
+* business acceptance criteria—that it delivers the business value that was intended.
+* capacity, availability, security,
+* exploratory testing and a demonstration
+
+Principles
+# Create a Repeatable, Reliable Process for Releasing Software
+# Automate Almost Everything
+# Keep Everything in Version Control
+# If It Hurts, Do It More Frequently, and Bring the Pain Forward
+# Build Quality In (catch defects as early in the delivery process as possible)
+# Done Means Released
+
+h2. Continuous Integration
+
+Keep the Build and Test Process Short
+
+
+I'll add more to these reading notes as I find useful information in the book.
