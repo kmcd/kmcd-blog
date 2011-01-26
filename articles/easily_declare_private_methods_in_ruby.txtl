@@ -4,7 +4,7 @@ tag:   draft
 date:  Jan 20 2011
 ---
 
-h3. Work in progress! Havn't figured out how to find the method which is *calling* the current method
+h3. Work in progress! Haven't yet figured out how to declare method private fro m within an instance method.
 
 When you have a large class file, private method definitions can often be too far away from their calling methods. You can end up ping ponging back and forward between calling and helper methods.
 
@@ -58,15 +58,18 @@ require 'ruby-private'
 
 class Foo
   def bar
-  end.private!
+    # You can declare this anywhere in the method. 
+    # However, at the top or bottom would be most noticable
+    private!
+  end
 end
 
 Foo.private_methods
 => ["bar"]
 </pre>
 
-Sweet, tasty sugar. 
+Sweet, tasty sugar. Not the most useful code in the world but an interesting eperiment which helped me get re-aquinted with an old friend called Kernel.
 
-h3. Work in progress! Havn't figured out how to find the method which is *calling* the current method
+h3. Work in progress! Haven't yet figured out how to declare method private fro m within an instance method.
 
 <code>ruby-private</code> is "available on ruby gems":http://. You can check out the "ruby-private source on github":http:// .

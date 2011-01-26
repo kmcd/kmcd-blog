@@ -1,6 +1,5 @@
 = WIP
 
-Easily declare private methods
 My Ruby/Rails development environment (dox, jedit, term, firefox, web dev, firebug)
 Code walk through from Rails/Ascii casts
 
@@ -59,3 +58,10 @@ apt package for rvm, ror
 initialize ruby instance variables from constructor
 attention/concentration test (backwards countdown)
 show full article in feed
+sq3r gary bernhardt peepcode screencast
+jedit fu
+all you need is composed mehtod, slap & tests
+count down concentration timer (John Medina)
+sq3r web mining
+ruby gem for amazon simple email service
+open source version of railskits
