@@ -1,20 +1,16 @@
-= WIP
+= WIP (3)
 
-My Ruby/Rails development environment (dox, jedit, term, firefox, web dev, firebug)
 Code walk through from Rails/Ascii casts
 
-= Next
+= Next (3)
 
 include ActionController::UrlWriter to generate app routes
-Code reading articles from RubyFlow
 ActiveRecord tableless model macro
+Code reading articles from RubyFlow
 
-= Writing about code
+= Writing about code (10)
 
-productive_programmer_notes.txt
-Productivity hacks
-   - ~/bin shorcuts
-   - from productive programmer
+productive_programmer_notes.txt (~/bin shorcuts)
 Bash-fu
    - bash_profile
    - CTL + R
@@ -26,11 +22,12 @@ debug_it_notes.txt
 test & refactor (composed method) flowercard delivery_method
 notes from ruby refactoring
 connection.execute is not chainable with named scopes
-feedburner
 fresh rvm mysql ror ubuntu install (history from dev machine)
+sq3r gary bernhardt peepcode screencast
+sq3r web mining
 
 
-= Code reading
+= Code reading (5)
 
 Read a library from Ruby standard library
 Find missing tests in Ruby standard library
@@ -39,29 +36,27 @@ Find a gem to read (defunkt)
 How does the Rails router work?
 
 
-= Code writing
+= Code writing (10)
 
+big tuna subversion handler and tests
 Rails unit test generator
 jedit macro for extract method refactoring in ruby
-exercises from ruby refactoring
-write rdoc & refactor texas holdem gem
 Soduku solver (ruby, Norvig)
 undo removing all o's from start small stay small notes
-delayed job deserialize bugfix and test
-big tuna subversion handler and tests
 mining github for rubyists (see hackdiary)
-publish to hacker news, ruby flow rake task
 Write missing tests in Ruby standard library
-Run Rails 2.8-stable test suite
-Find a bug to fix in Rails
 apt package for rvm, ror
-initialize ruby instance variables from constructor
-attention/concentration test (backwards countdown)
-show full article in feed
-sq3r gary bernhardt peepcode screencast
-jedit fu
-all you need is composed mehtod, slap & tests
-count down concentration timer (John Medina)
-sq3r web mining
 ruby gem for amazon simple email service
-open source version of railskits
+count down concentration timer (John Medina)
+jedit macro to count number of selected lines
+
+
+= Blog app (3)
+feedburner
+show full article in feed
+publish to hacker news, ruby flow rake task
+
+
+= Idea stream
+
+
