@@ -41,12 +41,14 @@ h2. Shell
 
 The standard gnome-terminal is enough for me. I've set up the following aliases in my ~/.bash_profile to cut down on keystrokes.
 
+<pre>
 alias 7ci='svn ci -m '
 alias 7st='svn st --ignore-externals | egrep "(M|A|D|\?)" '
 alias dm='rake db:migrate'
 alias g='git '
 alias j='~/bin/jedit -reuseview '
 alias tst='ruby -Ilib:test '
+</pre>
 
 h2. Web browser
 
