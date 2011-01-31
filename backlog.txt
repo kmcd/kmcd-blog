@@ -1,12 +1,10 @@
-= WIP (3)
-
-Code walk through from Rails/Ascii casts
+= WIP (2)
+sq3r web mining (part 1 infrastructure)
+include ActionController::UrlWriter to generate app routes
 
 = Next (3)
 
-include ActionController::UrlWriter to generate app routes
 ActiveRecord tableless model macro
-Code reading articles from RubyFlow
 
 = Writing about code (10)
 
@@ -18,37 +16,35 @@ Bash-fu
    - tab completion
    - job control
    - from peep code
+sq3r gary bernhardt peepcode screencast
 debug_it_notes.txt
 test & refactor (composed method) flowercard delivery_method
 notes from ruby refactoring
-connection.execute is not chainable with named scopes
-fresh rvm mysql ror ubuntu install (history from dev machine)
-sq3r gary bernhardt peepcode screencast
-sq3r web mining
+sq3r web mining (part 2 learning)
+sq3r web mining (part 3 applications)
 
 
 = Code reading (5)
 
-Read a library from Ruby standard library
-Find missing tests in Ruby standard library
-Find missing tests in Rails
-Find a gem to read (defunkt)
-How does the Rails router work?
-
+RubyFlow > factory girl
+RubyFlow > barista gem
+RubyFlow > capistrano gem
+ActiveRecord::Relation Walkthrough (asciicast 239)
+how does arel implement lazy loading?
+read https://github.com/rubyworks/facets
 
 = Code writing (10)
 
-big tuna subversion handler and tests
 Rails unit test generator
 jedit macro for extract method refactoring in ruby
-Soduku solver (ruby, Norvig)
-undo removing all o's from start small stay small notes
-mining github for rubyists (see hackdiary)
-Write missing tests in Ruby standard library
-apt package for rvm, ror
-ruby gem for amazon simple email service
-count down concentration timer (John Medina)
 jedit macro to count number of selected lines
+jedit open file dialog sortable by date
+Soduku solver (ruby, Norvig)
+big tuna subversion handler and tests
+count down concentration timer (John Medina)
+mining github for rubyists (see hackdiary)
+ruby gem for amazon simple email service
+undo removing all o's from start small stay small notes
 
 
 = Blog app (3)
@@ -56,7 +52,4 @@ feedburner
 show full article in feed
 publish to hacker news, ruby flow rake task
 
-
 = Idea stream
-
-

@@ -1,0 +1,37 @@
+---
+title: Using app routes in ActionMailer
+tag:   draft
+date:  Jan 31 2011
+---
+
+Have you ever needed to use app routes, eg foo_path(1) or bar_url in ActionMailer and found they're not available? I've needed to generate app routes in plain old classes which do not inherit from Rails classes, eg:
+
+* email messages
+* background jobs
+* reports
+
+Here's an example of how I generate app routes in plain old ruby classes. Caveat: you'll need to require the rails environment if you already haven't.
+
+<pre>
+class BackgroundTask
+  include ActionController::UrlWriter
+  include ApplicationHelper
+  
+  # This is a contant because it is called by class and instance methods
+  HOST_NAME = $SERVER_URL[/((?:\w|\.)+):*/,1]
+  
+  # Needed to generate foo_url routes
+  default_url_options[:host] = HOST_NAME
+  
+  # Emulate the request method. 
+  # This is handled with method missing because the request may be called
+  # outside the current class, eg by UrlWriter
+  def method_missing(name, *args)
+    return unless name == :request
+    env = { 'SERVER_ADDR' => HOST_NAME, 'SERVER_PORT' => $SERVER_URL[/\d+$/] }
+    ActionController::Request.new(env) 
+  end
+end
+</pre>
+
+The key is the first two includes @ActionController::UrlWriter@ and @ApplicationHelper@ . The remaining code is needed to generate route correctly. 
