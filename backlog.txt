@@ -1,13 +1,19 @@
 = WIP (2)
+
 sq3r web mining (part 1 infrastructure)
-include ActionController::UrlWriter to generate app routes
+- notes
+- edit
+- blog post
+
+ActiveRecord tableless model gem (pre Rails 3)
+- rdoc
 
 = Next (3)
-
-ActiveRecord tableless model macro
+show full article in feed
+RubyFlow > factory girl
+Rails unit test generator
 
 = Writing about code (10)
-
 productive_programmer_notes.txt (~/bin shorcuts)
 Bash-fu
    - bash_profile
@@ -16,26 +22,23 @@ Bash-fu
    - tab completion
    - job control
    - from peep code
-sq3r gary bernhardt peepcode screencast
 debug_it_notes.txt
 test & refactor (composed method) flowercard delivery_method
+sq3r gary bernhardt peepcode screencast
 notes from ruby refactoring
 sq3r web mining (part 2 learning)
 sq3r web mining (part 3 applications)
 
 
 = Code reading (5)
-
-RubyFlow > factory girl
 RubyFlow > barista gem
 RubyFlow > capistrano gem
 ActiveRecord::Relation Walkthrough (asciicast 239)
 how does arel implement lazy loading?
 read https://github.com/rubyworks/facets
 
-= Code writing (10)
 
-Rails unit test generator
+= Code writing (10)
 jedit macro for extract method refactoring in ruby
 jedit macro to count number of selected lines
 jedit open file dialog sortable by date
@@ -49,7 +52,13 @@ undo removing all o's from start small stay small notes
 
 = Blog app (3)
 feedburner
-show full article in feed
 publish to hacker news, ruby flow rake task
+move to Rails 3
 
-= Idea stream
+= Idea stream(5)
+Rails ActionView helper: div '#id.foo.bar', 'baz'
+use Kernel set_trace_func to create a private method
+India
+chrobot gem
+jeweler test declarative, file naming and autotest coloring 
+monthly ruby roundup

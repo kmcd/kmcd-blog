@@ -1,0 +1,57 @@
+---
+title: ActiveRecord tableless model gem
+tag:   draft
+date:  Jan 31 2011
+---
+
+I've written a gem to simplify creating ActiveRecord clases which don't need a database table. I've found this useful for:
+* Factory method, ie creating other classes
+* Wizard (multi-step) forms
+* Presenter style forms handling mutiple models
+
+Thanks to Ryan Bates "Tableless Model Railscast":http://railscasts.com/episodes/193-tableless-model and the  "Tableless Model asciicast":http://asciicasts.com/episodes/193-tableless-model.html for the inspiration.
+
+h3. Installation
+
+@$ gem install active_record-tableless_model@
+
+h3. Usage
+
+<pre>
+require 'active_record-tableless_model'
+
+class Task < ActiveRecord::Base
+  include TablelessModel
+  
+  column :description,  :text
+  column :priority,     :integer
+  column :project_id,   :string  
+end 
+</pre>
+
+Note that your class must still inherit from ActiveRecord if you need to use validations and associations.
+
+h3. How it works
+
+If you create a class inheriting from ActiveModel, and no corresponding table exist in the database you'll get an @ActiveRecord::StatementInvalid@ error. You need to tell your model what columns should exist on the table. Migrations do this by defining colums using @column@. 
+
+All you need to do is create class methods allowing you to declare the column names directly in the class (without the need for a migration). Here's how it's done:
+
+<pre>
+module TablelessModel
+  def self.included(klass)
+    klass.extend ClassMethods
+  end
+  
+  module ClassMethods
+    def self.columns() @columns ||= []; end  
+     
+    def self.column(name, sql_type = nil, default = nil, null = true)  
+      columns << ActiveRecord::ConnectionAdapters::Column.new(name.to_s, default, sql_type.to_s, null)  
+    end  
+  end
+end
+</pre>
+
+
+There's no need for this gem if you're using Rails 3 - ActiveModel provides all ActiveRecord functionality for plain Ruby objects.
