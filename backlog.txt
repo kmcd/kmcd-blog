@@ -1,15 +1,10 @@
 = WIP (2)
-
 sq3r web mining (part 1 infrastructure)
 - notes
 - edit
 - blog post
 
-ActiveRecord tableless model gem (pre Rails 3)
-- rdoc
-
 = Next (3)
-show full article in feed
 RubyFlow > factory girl
 Rails unit test generator
 
@@ -29,36 +24,27 @@ notes from ruby refactoring
 sq3r web mining (part 2 learning)
 sq3r web mining (part 3 applications)
 
-
 = Code reading (5)
 RubyFlow > barista gem
 RubyFlow > capistrano gem
 ActiveRecord::Relation Walkthrough (asciicast 239)
 how does arel implement lazy loading?
-read https://github.com/rubyworks/facets
-
 
 = Code writing (10)
+use Kernel set_trace_func to create a private method
+chrobot gem
 jedit macro for extract method refactoring in ruby
-jedit macro to count number of selected lines
-jedit open file dialog sortable by date
-Soduku solver (ruby, Norvig)
+Rails ActionView helper: div '#id.foo.bar', 'baz'
 big tuna subversion handler and tests
+use Kernel set_trace_func to create a private method
 count down concentration timer (John Medina)
 mining github for rubyists (see hackdiary)
 ruby gem for amazon simple email service
 undo removing all o's from start small stay small notes
-
 
 = Blog app (3)
 feedburner
 publish to hacker news, ruby flow rake task
 move to Rails 3
 
-= Idea stream(5)
-Rails ActionView helper: div '#id.foo.bar', 'baz'
-use Kernel set_trace_func to create a private method
-India
-chrobot gem
-jeweler test declarative, file naming and autotest coloring 
-monthly ruby roundup
+= Idea stream (5)

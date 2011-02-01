@@ -7,6 +7,7 @@ xml.rss("version" => "0.91") {
       xml.item {
         xml.title article.title
         xml.link  article.link
+        xml.description  article.content
       }
     end
   }
