@@ -1,15 +1,20 @@
 = WIP (2)
-sq3r web mining (part 1 infrastructure)
-- notes
-- edit
-- blog post
+sq3r web mining (chapter 1 crawler)
+   blog > reading notes
+   miniproject > github gem
+   miniproject > benchmark
+   blog > miniproject code highlights
+   blog > miniproject benchmark results
+
+feedburner
 
 = Next (3)
-RubyFlow > factory girl
-Rails unit test generator
+chrobot gem (put on github, README)
+ActiveRecord::Relation Walkthrough (asciicast 239)
+productive_programmer_notes.txt (~/bin shorcuts)
 
 = Writing about code (10)
-productive_programmer_notes.txt (~/bin shorcuts)
+test & refactor (composed method) flowercard delivery_method
 Bash-fu
    - bash_profile
    - CTL + R
@@ -18,33 +23,35 @@ Bash-fu
    - job control
    - from peep code
 debug_it_notes.txt
-test & refactor (composed method) flowercard delivery_method
-sq3r gary bernhardt peepcode screencast
 notes from ruby refactoring
-sq3r web mining (part 2 learning)
-sq3r web mining (part 3 applications)
+sq3r web mining (chapter 2 IR basics)
+pragmatic programmer notes
+pragmatic learning notes
+4 hour work week notes
+start small stay small notes
 
 = Code reading (5)
 RubyFlow > barista gem
 RubyFlow > capistrano gem
-ActiveRecord::Relation Walkthrough (asciicast 239)
 how does arel implement lazy loading?
+Rails first release
 
 = Code writing (10)
-use Kernel set_trace_func to create a private method
-chrobot gem
+chrobot test suite 
+chrobot comprehensive rdoc
+declaritive testing gem and Object extentions
+Rails unit test generator
 jedit macro for extract method refactoring in ruby
 Rails ActionView helper: div '#id.foo.bar', 'baz'
 big tuna subversion handler and tests
-use Kernel set_trace_func to create a private method
 count down concentration timer (John Medina)
 mining github for rubyists (see hackdiary)
-ruby gem for amazon simple email service
 undo removing all o's from start small stay small notes
 
 = Blog app (3)
-feedburner
-publish to hacker news, ruby flow rake task
+publish to hacker news, ruby flow etc. rake task
 move to Rails 3
 
 = Idea stream (5)
+Norvig soduku
+
