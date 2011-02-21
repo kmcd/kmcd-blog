@@ -1,0 +1,114 @@
+---
+title: Refactoring to composed methods in Ruby
+tag:   draft
+date:  Feb 21 2011
+---
+
+The composed method pattern means breaking up your code into code into quite short, self descriptive methods. The result should be that your code is more readable and easier to debug.
+
+An easy way to start is to take (or write) comments above a code section and use those as the method name. For example:
+
+<pre>
+def foo
+  # Seconds in a day
+  puts 60 * 60 * 24
+end
+</pre>
+
+becomes:
+
+<pre>
+def foo
+  puts seconds_in_a_day
+end
+
+def seconds_in_a_day
+  60 * 60 * 24
+end
+</pre>
+
+Here's the safest way to proceed:
+
+1. Ensure there are passing tests for all functionality
+2. Make comments for each block of functionality
+3. Move the functionality to new methods
+4. Explain what you just did to someone else
+
+Here's a real live example from production code. I had to fix a bug in this code; so I used the boy scout principle to test, fix and refactor.
+
+h2. Before
+
+<pre>
+# Rules for determining next delivery date
+# 1. Initially set next delivery date to current date + delivery time for delivery method
+# 2. Add the non delivery dates between now and the expected delivery date
+# 3. Add 1 day if the order is placed after noon
+# 4. If there is a Sunday between today's date and the next delivery add 1 day
+# 5. If the current day is Saturday or Sunday or Friday afternoon then add 1 day to next delivery date
+#
+def next_delivery_date
+  ndd = current_time
+  # Rule 1
+  if delivery_time
+  ndd = current_time + delivery_time.days
+  end
+  # Rule 2
+  ndd = ndd + NonDeliveryDate.count_none_delivery_dates(current_time.tomorrow, ndd).days
+  # Rule 3
+  ndd = ndd.advance(:days => 1) if current_time.hour >= 12 && !(current_time.wday == 6 || current_time.wday == 0)
+  # Rule 4
+  ndd = ndd.advance(:days => 1) if ndd.wday < current_time.wday && current_time.wday != 0
+  # Rule 5
+  ndd = ndd.advance(:days => 1) if current_time.wday == 6 || current_time.wday == 0 || (current_time.wday == 5 && current_time.hour >= 12) 
+end
+</pre>
+
+h2. After
+
+<pre>
+def next_delivery_date
+  ndd = delivery_time ? current_time + delivery_time.days : current_time
+
+  ndd += NonDeliveryDate.count_none_delivery_dates(current_time.tomorrow, ndd).days
+
+  ndd = ndd.advance :days => 1 if on_a_weekday? && after_12_midday?
+  ndd = ndd.advance :days => 1 if sunday_between? ndd, current_time
+  ndd = ndd.advance :days => 1 if on_weekend? || (friday? && after_12_midday?)
+
+  ndd.beginning_of_day
+end
+
+private
+  
+def current_time
+  @current_time ||= Time.zone.now
+end
+
+def after_12_midday?
+  current_time.hour >= 12
+end
+
+def on_a_weekday?
+  (1..5).include? current_time.wday
+end
+
+def on_weekend?
+  !on_a_weekday?
+end
+
+def sunday_between?(ndd,current_time)
+  ndd.wday < current_time.wday && current_time.wday != 0
+end
+
+def friday?
+  current_time.wday == 5 
+end
+</pre>
+
+No, it's not perfect and you could definitely DRY up the @advance :days => 1@ statements. But for now its Good Enough ^TM^.
+
+h2. Further reading
+
+* "Small talk best practive patterns":http://c2.com/cgi/wiki?SmalltalkBestPracticePatterns
+* "Refactoring Ruby":http://www.amazon.com/Refactoring-Ruby-Jay-Fields/dp/0321603508 by Jay Fields
+* "Refactoring in Ruby":http://www.amazon.co.uk/Refactoring-Ruby-William-C-Wake/dp/0321545044/ref=sr_1_2?ie=UTF8&qid=1298311302&sr=8-2 by Kevin Rutherford

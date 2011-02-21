@@ -1,12 +1,12 @@
 = WIP (2)
-feedburner
 
 = Next (3)
-chrobot gem (put on github, README)
-productive_programmer_notes.txt (~/bin shorcuts)
+test & refactor (composed method) flowercard delivery_method
+Chrobot gem (Readme)
+RubyFlow > capistrano gem
 
 = Writing about code (10)
-test & refactor (composed method) flowercard delivery_method
+productive_programmer_notes.txt (~/bin shorcuts)
 Bash-fu
    - bash_profile
    - CTL + R
@@ -16,33 +16,27 @@ Bash-fu
    - from peep code
 debug_it_notes.txt
 notes from ruby refactoring
-sq3r web mining (chapter 2 IR basics)
 pragmatic programmer notes
 pragmatic learning notes
 4 hour work week notes
 start small stay small notes
-No input without output (news, information diet)
 
 = Code reading (5)
-RubyFlow > barista gem
-RubyFlow > capistrano gem
 how does arel implement lazy loading?
 Rails first release
 
 = Code writing (10)
-chrobot test suite 
-chrobot comprehensive rdoc
 declaritive testing gem and Object extentions
-Rails unit test generator
-jedit macro for extract method refactoring in ruby
-Rails ActionView helper: div '#id.foo.bar', 'baz'
-big tuna subversion handler and tests
 count down concentration timer (John Medina)
 mining github for rubyists (see hackdiary)
 undo removing all o's from start small stay small notes
+Norvig soduku
+Scrabble stems
+Gin rummy gem
 
 = Blog app (3)
-publish to hacker news, ruby flow etc. rake task
+publish to hacker news, ruby flow etc.
+- VA to set up a/c's
+- rake task
 
 = Idea stream (5)
-Norvig soduku
