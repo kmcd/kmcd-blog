@@ -6,7 +6,7 @@ date:  Feb 17 2011
 
 Reading notes from "Mining the Web, Discovering Knowledge from Hypertext Data":http://www.cse.iitb.ac.in/soumen/mining-the-web by "Soumen Chakrabarti":http://www.cse.iitb.ac.in/~soumen 
 
-h2. I wrote a "prototype web crawler in Ruby":https://github.com/kmcd/web_crawler
+h2. I wrote a "prototype web crawler in Ruby":https://github.com/kmcd/web_crawler .
 
 A large scale crawler fetches concurrently as many web pages as possible. The crawler should:
 1. Resolving the hostname in the URL to an IP address using DNS

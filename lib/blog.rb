@@ -8,13 +8,13 @@ class Blog < Sinatra::Application
   before { cache_content }
   
   get '/' do
-    @articles, @template = Article.all, :index
+    @articles, @template = fetch_articles, :index
     erb @template
   end
   
   get '/keith_mcdonnell.rss' do
     # TODO: xml content type
-    @articles, @template = Article.all, :rss_feed
+    @articles, @template = fetch_articles, :rss_feed
     builder @template
   end
   
@@ -37,5 +37,9 @@ class Blog < Sinatra::Application
   
   def cache_content(seconds=44640)
     response.headers['Cache-Control'] = "public, max-age=#{seconds}"
+  end
+  
+  def fetch_articles
+    Article.all.sort_by {|a| a.updated_at }.reverse
   end
 end

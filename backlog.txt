@@ -3,7 +3,6 @@ feedburner
 
 = Next (3)
 chrobot gem (put on github, README)
-ActiveRecord::Relation Walkthrough (asciicast 239)
 productive_programmer_notes.txt (~/bin shorcuts)
 
 = Writing about code (10)
@@ -44,7 +43,6 @@ undo removing all o's from start small stay small notes
 
 = Blog app (3)
 publish to hacker news, ruby flow etc. rake task
-move to Rails 3
 
 = Idea stream (5)
 Norvig soduku

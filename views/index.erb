@@ -15,12 +15,12 @@
    <p>
       Email <a href="mailto:<%= email_address %>"><%= email_address %></a>
       if you want to get in touch. Keep abrest of latest articles with my
-      <a href="/keith_mcdonnell.rss">RSS feed</a>.
+      <a href="http://feeds.feedburner.com/KeithMcdonnellsArticlesOnSoftware">RSS feed</a>.
    </p>
 </div>
 
 <ol id='articles'>
-   <% @articles.sort_by {|a| a.updated_at }.reverse.each do |article| %>
+   <% @articles.each do |article| %>
    <li>
       <a href="<%= article.file_name %>"><%= article.title %></a>
       <span><%= article.updated_at.strftime "%a %d %b %Y" %></span>
