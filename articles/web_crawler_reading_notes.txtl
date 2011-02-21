@@ -6,6 +6,8 @@ date:  Feb 17 2011
 
 Reading notes from "Mining the Web, Discovering Knowledge from Hypertext Data":http://www.cse.iitb.ac.in/soumen/mining-the-web by "Soumen Chakrabarti":http://www.cse.iitb.ac.in/~soumen 
 
+h2. I wrote a "prototype web crawler in Ruby":https://github.com/kmcd/web_crawler
+
 A large scale crawler fetches concurrently as many web pages as possible. The crawler should:
 1. Resolving the hostname in the URL to an IP address using DNS
 2. Connecting a socket to the server and sending the request
@@ -137,4 +139,6 @@ while event loop has not been stopped do
 end while
 </pre>
 
-See also "http://en.wikipedia.org/wiki/Web_crawler":http://en.wikipedia.org/wiki/Web_crawler
+See also: 
+* "http://en.wikipedia.org/wiki/Web_crawler":http://en.wikipedia.org/wiki/Web_crawler
+* http://blog.marc-seeger.de/2010/12/09/my-thesis-building-blocks-of-a-scalable-webcrawler

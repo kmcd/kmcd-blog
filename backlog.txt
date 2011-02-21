@@ -1,11 +1,4 @@
 = WIP (2)
-sq3r web mining (chapter 1 crawler)
-   blog > reading notes
-   miniproject > github gem
-   miniproject > benchmark
-   blog > miniproject code highlights
-   blog > miniproject benchmark results
-
 feedburner
 
 = Next (3)
@@ -29,7 +22,7 @@ pragmatic programmer notes
 pragmatic learning notes
 4 hour work week notes
 start small stay small notes
-notes from reading in India
+No input without output (news, information diet)
 
 = Code reading (5)
 RubyFlow > barista gem
@@ -55,4 +48,3 @@ move to Rails 3
 
 = Idea stream (5)
 Norvig soduku
-
