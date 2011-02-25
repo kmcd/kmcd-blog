@@ -1,19 +1,27 @@
-= WIP (2)
-
+= WIP (1)
+Bash-fu
+   
 = Next (3)
-test & refactor (composed method) flowercard delivery_method
+undo removing all o's from start small stay small notes
+Decipher sentiment analysis code (twitter, alias-i)
+Syntax highlighting
+
+= Code writing (10)
+Norvig soduku solver
+Scrabble cheat app
+count down concentration timer (John Medina)
+mining github for rubyists (see Matt Biddulph's article)
 Chrobot gem (Readme)
-RubyFlow > capistrano gem
+6 degrees of seperation on wikipedia (TCD student - Vince?)
+
+= Code reading (5)
+Rails first release
+Rake
+Builder
+Toby Segarans Collective Intelligence python code
 
 = Writing about code (10)
 productive_programmer_notes.txt (~/bin shorcuts)
-Bash-fu
-   - bash_profile
-   - CTL + R
-   - history
-   - tab completion
-   - job control
-   - from peep code
 debug_it_notes.txt
 notes from ruby refactoring
 pragmatic programmer notes
@@ -21,22 +29,12 @@ pragmatic learning notes
 4 hour work week notes
 start small stay small notes
 
-= Code reading (5)
-how does arel implement lazy loading?
-Rails first release
-
-= Code writing (10)
-declaritive testing gem and Object extentions
-count down concentration timer (John Medina)
-mining github for rubyists (see hackdiary)
-undo removing all o's from start small stay small notes
-Norvig soduku
-Scrabble stems
-Gin rummy gem
-
 = Blog app (3)
 publish to hacker news, ruby flow etc.
-- VA to set up a/c's
-- rake task
+   - VA to set up a/c's
+   - rake task
 
 = Idea stream (5)
+use threads to improve crawler performance
+benchmark crawler with eventmachine
+unit tests & intro for web crawler

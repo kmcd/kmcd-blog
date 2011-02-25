@@ -1,0 +1,99 @@
+---
+title: Command line Bash-fu
+tag:   draft
+date:  Feb 22 2011
+---
+
+Why use the command line? Because it's far quicker & more productive than using a GUI. It's easy to automate & you can search what you've previously done. I use the BASH shell which is usually the default.
+
+Firstly, you need a cool prompt. Here's mine which shows my user name, computer name and current directory:
+
+<pre>
+export PS1="\[\e[36;1m\]\u\[\e[0m\]@\[\e[32;1m\]\H\[\e[34;1m\] \W\[\e[0m\] $ "
+</pre>
+
+Which translates to kmcd@shinobi ~ $ on my laptop.
+
+You can save this in ~/.bash_profile
+
+h2. Cutting down on keystrokes
+
+Use tab completion to complete commands and directory listings; eg type in @ma@ and hit the tab key twice. You'll get a list of all commands beginning with "ma" . 
+
+Similarly, to view a directory listing, type the name of the directory and tab twice to see what's inside; eg @ls /@ TAB TAB shows:
+
+<pre>
+kmcd@shinobi ~ $ ls /
+bin/            initrd.img      proc/           usr/
+boot/           initrd.img.old  root/           var/
+... and so on
+</pre>
+
+h2. Learning the lessons of history
+
+One of my favourite features is the history command. Simply type in @history@ to see everything you've typed at the command line.
+
+I combine this with an @alias h='history | grep '@ in my ~/.bash_profile to quickly search. eg to see all your subversion commands, type in @$ h svn@
+
+If you want to run that command again, type in @!@ followed by the command number; eg @!123@ . Awesome!
+
+You'll want to increase the size of your history - the default is 1000 entries which is no enough. You'd be surprised how quickly that rolls over. Add this to your ~/.bash_profile :
+
+<pre>
+export HISTSIZE=999999
+export HISTCONTROL=ignoredups
+</pre>
+
+There's one more (even quicker) way to run a command again. Type in CTLR + R followed by the string your searching for and the shell will display the last matching command.. 
+
+h2. Useful commands
+
+|_.Command|_.Description|_.Exmaple|
+|grep| Search in a file for a pattern | grep -R  |
+|find| Find files matching name | find . -name "my_homework.txt" |
+|tree| View directory as a tree | tree /tmp |
+
+You can also pipe commands, eg to show all ruby processes @$ ps waux | grep ruby@ . 
+
+Sometimes you need to poce
+
+h2. Shortcuts
+
+Add aliases to your ~/.bash_profile to shorten frequently used commands. Here are some aliases useful for Rails development:
+
+<pre>
+alias dm='rake db:migrate'
+alias tst='ruby -Ilib:test '
+alias g='git '
+alias 7st='svn st --ignore-externals | egrep "(M|A|D|\?)" '
+alias 7ci='svn ci -m '
+</pre>
+
+Here's how I quickly open an editor to modify my shell profile and reload the environment (so the changes take effect).
+
+<pre>
+alias jpf='~/bin/jedit -reuseview  ~/.bash_profile'
+alias rl='source ~/.bash_profile'
+</pre>
+
+Sometimes alias dont work (eg what about a piped command?). Functions to the rescue! Here's how I pass all arguments to svn and pipe the results to the coloriser:
+
+<pre>
+sd()
+{
+  svn diff "${@}" | colordiff
+}
+</pre>
+
+All you need to know are that arguments are passed in as $1, $2 and so on. All arguments are stored as $* .
+
+h2. Bonus tip
+
+Create a directory ~/bin to keep handy scripts. Extra bonus for Gnome users -- you can run this from the ALT + F2 launcher.
+
+h2. Futher reading
+
+* "The Pragmatic Programmer":http://www.pragprog.com/the-pragmatic-programmer , pp 77 (Shell games) 
+* "Productive programmer":http://www.amazon.com/Productive-Programmer-Theory-Practice-OReilly/dp/0596519788 , chapter 4 Focus
+* "Unix power tools":http://docstore.mik.ua/orelly/unix/upt
+* "Advanced Bash scripting guide":http://tldp.org/LDP/abs/html
