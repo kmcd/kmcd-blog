@@ -21,7 +21,7 @@ h3. Usage
 require 'active_record-tableless_model'
 
 class Task < ActiveRecord::Base
-  include TablelessModel
+  no_table
   
   column :description,  :text
   column :priority,     :integer

@@ -1,13 +1,12 @@
 = WIP (1)
-Bash-fu
-   
-= Next (3)
 undo removing all o's from start small stay small notes
-Decipher sentiment analysis code (twitter, alias-i)
-Syntax highlighting
 
-= Code writing (10)
+= Next (3)
+Decipher sentiment analysis code (twitter, alias-i)
 Norvig soduku solver
+productive_programmer_notes.txt
+
+= Code writing (7)
 Scrabble cheat app
 count down concentration timer (John Medina)
 mining github for rubyists (see Matt Biddulph's article)
@@ -20,8 +19,7 @@ Rake
 Builder
 Toby Segarans Collective Intelligence python code
 
-= Writing about code (10)
-productive_programmer_notes.txt (~/bin shorcuts)
+= Writing about code (7)
 debug_it_notes.txt
 notes from ruby refactoring
 pragmatic programmer notes
@@ -33,6 +31,7 @@ start small stay small notes
 publish to hacker news, ruby flow etc.
    - VA to set up a/c's
    - rake task
+Syntax highlighting
 
 = Idea stream (5)
 use threads to improve crawler performance
