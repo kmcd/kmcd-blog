@@ -1,23 +1,21 @@
 = WIP (1)
-undo removing all o's from start small stay small notes
+Norvig soduku solver
 
 = Next (3)
-Decipher sentiment analysis code (twitter, alias-i)
-Norvig soduku solver
 productive_programmer_notes.txt
+undo removing all o's from start small stay small notes
+Decipher sentiment analysis code (twitter, alias-i)
 
 = Code writing (7)
 Scrabble cheat app
 count down concentration timer (John Medina)
 mining github for rubyists (see Matt Biddulph's article)
-Chrobot gem (Readme)
 6 degrees of seperation on wikipedia (TCD student - Vince?)
 
 = Code reading (5)
 Rails first release
 Rake
 Builder
-Toby Segarans Collective Intelligence python code
 
 = Writing about code (7)
 debug_it_notes.txt
@@ -37,3 +35,4 @@ Syntax highlighting
 use threads to improve crawler performance
 benchmark crawler with eventmachine
 unit tests & intro for web crawler
+This post cost me £7,340 ($10,000)

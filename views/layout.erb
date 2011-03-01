@@ -2,7 +2,7 @@
 <html>
    <head>
       <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-      <link href="dancingtext.css" rel="stylesheet" type="text/css" media="screen"/>
+      <link href="/dancingtext.css" rel="stylesheet" type="text/css" media="screen"/>
       <title><%= title %></title>
    </head>
    <body class='<%= @template %>'>
@@ -18,10 +18,12 @@
       pageTracker._trackPageview();
       } catch(err) {}</script>
       
+      <%if @template =~ /(index|show)/ %>
       <p class='copyright'>
          <a href="http://creativecommons.org/licenses/by-sa/2.5/">Copyright &copy;</a>
          2006 - <%= Time.now.year %>, 
          <a href="http://www.keithmcdonnell.net">Keith McDonnell</a>.
       </p>
+      <% end %>
    </body>
 </html>

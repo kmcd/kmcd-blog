@@ -18,6 +18,11 @@ class Blog < Sinatra::Application
     builder @template
   end
   
+  get '/a/*' do
+    @template = :landing_page
+    erb @template
+  end
+  
   get /^\/(\w+.*)\.html$/ do |title|
     @article, @template = Article.new(title), :show
     erb @template
